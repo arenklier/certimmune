@@ -1,0 +1,12 @@
+{
+  "protocol": "exclusive GPU, single process, one shared fp16 SD1.5 pipeline, batch 1, synchronize-bracketed, 2 warm-up steps discarded",
+  "photoguard_per_step_s": 0.05045816421508789,
+  "eot_per_step_s": 2.9889479637145997,
+  "fasteot_per_step_s": 0.6231299638748169,
+  "eot_over_photoguard": 59.23616148565411,
+  "fasteot_over_photoguard": 12.349437867350908,
+  "eot_over_fasteot": 4.796668651798393,
+  "photoguard_1000step_budget_s": 50.45816421508789,
+  "matched_steps_eot": 16.881580016662312,
+  "matched_steps_fasteot": 80.97534565875031
+}

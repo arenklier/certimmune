@@ -1,0 +1,98 @@
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:02<00:10,  2.07s/it]Loading pipeline components...:  33%|███▎      | 2/6 [00:02<00:04,  1.23s/it]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...: 100%|██████████| 6/6 [00:02<00:00,  3.19it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:02<00:00,  2.08it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+=== PhotoGuard (OFFICIAL recipe port): VAE-latent-norm encoder attack (epsilon=0.0314) ===
+    step    0: latent norm = 544.8680  step_size=0.01000
+    step  100: latent norm = 315.6678  step_size=0.00901
+    step  200: latent norm = 302.2362  step_size=0.00802
+    step  300: latent norm = 287.2142  step_size=0.00703
+    step  400: latent norm = 276.2386  step_size=0.00604
+    step  500: latent norm = 262.7370  step_size=0.00505
+    step  600: latent norm = 249.8604  step_size=0.00406
+    step  700: latent norm = 238.4829  step_size=0.00307
+    step  800: latent norm = 226.3671  step_size=0.00208
+    step  900: latent norm = 214.0671  step_size=0.00109
+    step  999: latent norm = 204.1087  step_size=0.00011
+
+=== Evaluating across the FULL Theta grid [100, 150, 200, 250, 300, 350, 400] (n_seeds=5) ===
+
+    t*  unprotected   photoguard
+   100       0.7784       0.3178
+   150       0.7067       0.1970
+   200       0.6330       0.1696
+   250       0.5665       0.0986
+   300       0.5002       0.0436
+   350       0.4302       0.0407
+   400       0.3822       0.0180
+
+worst-case over Theta: unprotected=0.7784  photoguard=0.3178
+
+Saved to /mnt/data/certimmune/src/../results
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:04,  1.15it/s]Loading pipeline components...:  50%|█████     | 3/6 [00:01<00:01,  1.73it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.84it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.77it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+=== Anti-DreamBooth (OFFICIAL ASPL core loss, static surrogate): diffusion noise-pred attack (epsilon=0.0314) ===
+    step   0: diffusion noise-pred loss (maximizing) = 0.2548
+    step   5: diffusion noise-pred loss (maximizing) = 0.0050
+    step  10: diffusion noise-pred loss (maximizing) = 0.0038
+    step  15: diffusion noise-pred loss (maximizing) = 0.0052
+    step  20: diffusion noise-pred loss (maximizing) = 0.6155
+    step  25: diffusion noise-pred loss (maximizing) = 0.0051
+    step  30: diffusion noise-pred loss (maximizing) = 0.0146
+    step  35: diffusion noise-pred loss (maximizing) = 0.4397
+    step  40: diffusion noise-pred loss (maximizing) = 0.0500
+    step  45: diffusion noise-pred loss (maximizing) = 0.4421
+    step  50: diffusion noise-pred loss (maximizing) = 0.5176
+    step  55: diffusion noise-pred loss (maximizing) = 0.0115
+    step  59: diffusion noise-pred loss (maximizing) = 0.1187
+
+=== Evaluating across the FULL Theta grid [100, 150, 200, 250, 300, 350, 400] (n_seeds=5) ===
+
+    t*  unprotected  anti-dreambooth
+   100       0.7784           0.5585
+   150       0.7067           0.4754
+   200       0.6330           0.3321
+   250       0.5665           0.2671
+   300       0.5002           0.1531
+   350       0.4302           0.1054
+   400       0.3822           0.0519
+
+worst-case over Theta: unprotected=0.7784  anti-dreambooth-style=0.5585
+
+Saved to /mnt/data/certimmune/src/../results

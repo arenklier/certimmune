@@ -1,0 +1,111 @@
+{
+  "tag": "photoguard_05",
+  "architecture": "pixart_alpha_512_dit",
+  "clean": "../data/celebahq_sample/identity_05.png",
+  "protected": "/mnt/data/certimmune/src/../results/photoguard_baseline_05_immunized.png",
+  "tau": 0.5,
+  "t_grid": [
+    100,
+    150,
+    200,
+    250,
+    300,
+    350,
+    400
+  ],
+  "n_seeds": 30,
+  "alpha_mc": 0.05,
+  "seconds": 80.4,
+  "immunized": {
+    "results": {
+      "100": {
+        "k": 0,
+        "n": 30,
+        "phat": 0.0,
+        "sim_mean": 0.0,
+        "sim_max": 0.0,
+        "no_face_rate": 1.0
+      },
+      "150": {
+        "k": 0,
+        "n": 30,
+        "phat": 0.0,
+        "sim_mean": 0.0,
+        "sim_max": 0.0,
+        "no_face_rate": 1.0
+      },
+      "200": {
+        "k": 0,
+        "n": 30,
+        "phat": 0.0,
+        "sim_mean": 0.0,
+        "sim_max": 0.0,
+        "no_face_rate": 1.0
+      },
+      "250": {
+        "k": 0,
+        "n": 30,
+        "phat": 0.0,
+        "sim_mean": 0.0,
+        "sim_max": 0.0,
+        "no_face_rate": 1.0
+      },
+      "300": {
+        "k": 0,
+        "n": 30,
+        "phat": 0.0,
+        "sim_mean": 0.0,
+        "sim_max": 0.0,
+        "no_face_rate": 1.0
+      },
+      "350": {
+        "k": 0,
+        "n": 30,
+        "phat": 0.0,
+        "sim_mean": 0.0,
+        "sim_max": 0.0,
+        "no_face_rate": 1.0
+      },
+      "400": {
+        "k": 0,
+        "n": 30,
+        "phat": 0.0,
+        "sim_mean": 0.006371407955884934,
+        "sim_max": 0.11703034490346909,
+        "no_face_rate": 0.9333333333333333
+      }
+    },
+    "marginal": {
+      "cp_upper": {
+        "100": 0.09503385285530411,
+        "150": 0.09503385285530411,
+        "200": 0.09503385285530411,
+        "250": 0.09503385285530411,
+        "300": 0.09503385285530411,
+        "350": 0.09503385285530411,
+        "400": 0.09503385285530411
+      },
+      "L_sigma_hat": 0.0,
+      "grid_residual": 0.0,
+      "max_cp_upper": 0.09503385285530411,
+      "alpha_final": 0.09503385285530411,
+      "alpha_mc_used": 0.05
+    },
+    "simultaneous": {
+      "cp_upper": {
+        "100": 0.15187005176476648,
+        "150": 0.15187005176476648,
+        "200": 0.15187005176476648,
+        "250": 0.15187005176476648,
+        "300": 0.15187005176476648,
+        "350": 0.15187005176476648,
+        "400": 0.15187005176476648
+      },
+      "L_sigma_hat": 0.0,
+      "grid_residual": 0.0,
+      "max_cp_upper": 0.15187005176476648,
+      "alpha_final": 0.15187005176476648,
+      "alpha_mc_used": 0.0071428571428571435
+    }
+  }
+}

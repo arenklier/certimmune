@@ -1,0 +1,182 @@
+{
+  "identity_00": {
+    "detection_rate": 1.0,
+    "min_sim": 0.9180469512939453,
+    "mean_sim": 0.9786767164866129,
+    "per_variant": {
+      "original": {
+        "detected": true,
+        "sim": 1.0
+      },
+      "center_crop_95pct": {
+        "detected": true,
+        "sim": 0.9827917218208313
+      },
+      "hflip": {
+        "detected": true,
+        "sim": 0.9180469512939453
+      },
+      "jpeg_q50": {
+        "detected": true,
+        "sim": 0.9836316108703613
+      },
+      "gaussian_blur_r1": {
+        "detected": true,
+        "sim": 0.993983805179596
+      },
+      "brightness_minus15pct": {
+        "detected": true,
+        "sim": 0.9978836178779602
+      },
+      "brightness_plus15pct": {
+        "detected": true,
+        "sim": 0.9957225918769836
+      }
+    },
+    "verdict": "STABLE"
+  },
+  "identity_01": {
+    "detection_rate": 0.8571428571428571,
+    "min_sim": 0.9399869441986084,
+    "mean_sim": 0.9681598544120789,
+    "per_variant": {
+      "original": {
+        "detected": true,
+        "sim": 1.0
+      },
+      "center_crop_95pct": {
+        "detected": false,
+        "sim": null
+      },
+      "hflip": {
+        "detected": true,
+        "sim": 0.9399869441986084
+      },
+      "jpeg_q50": {
+        "detected": true,
+        "sim": 0.9877060055732727
+      },
+      "gaussian_blur_r1": {
+        "detected": true,
+        "sim": 0.9745793342590332
+      },
+      "brightness_minus15pct": {
+        "detected": true,
+        "sim": 0.9947853684425354
+      },
+      "brightness_plus15pct": {
+        "detected": true,
+        "sim": 0.9437416195869446
+      }
+    },
+    "verdict": "FRAGILE"
+  },
+  "identity_02": {
+    "detection_rate": 0.8571428571428571,
+    "min_sim": 0.9322975873947144,
+    "mean_sim": 0.9783154010772706,
+    "per_variant": {
+      "original": {
+        "detected": true,
+        "sim": 1.0
+      },
+      "center_crop_95pct": {
+        "detected": false,
+        "sim": null
+      },
+      "hflip": {
+        "detected": true,
+        "sim": 0.9322975873947144
+      },
+      "jpeg_q50": {
+        "detected": true,
+        "sim": 0.9832037687301636
+      },
+      "gaussian_blur_r1": {
+        "detected": true,
+        "sim": 0.9899657964706421
+      },
+      "brightness_minus15pct": {
+        "detected": true,
+        "sim": 0.995334267616272
+      },
+      "brightness_plus15pct": {
+        "detected": true,
+        "sim": 0.9907755851745605
+      }
+    },
+    "verdict": "FRAGILE"
+  },
+  "identity_03": {
+    "detection_rate": 0.8571428571428571,
+    "min_sim": 0.9472771286964417,
+    "mean_sim": 0.9830610632896424,
+    "per_variant": {
+      "original": {
+        "detected": true,
+        "sim": 1.0
+      },
+      "center_crop_95pct": {
+        "detected": false,
+        "sim": null
+      },
+      "hflip": {
+        "detected": true,
+        "sim": 0.9472771286964417
+      },
+      "jpeg_q50": {
+        "detected": true,
+        "sim": 0.9912219643592834
+      },
+      "gaussian_blur_r1": {
+        "detected": true,
+        "sim": 0.992487907409668
+      },
+      "brightness_minus15pct": {
+        "detected": true,
+        "sim": 0.9964508414268494
+      },
+      "brightness_plus15pct": {
+        "detected": true,
+        "sim": 0.9878674745559692
+      }
+    },
+    "verdict": "FRAGILE"
+  },
+  "identity_04": {
+    "detection_rate": 0.8571428571428571,
+    "min_sim": 0.952620267868042,
+    "mean_sim": 0.9780132889747619,
+    "per_variant": {
+      "original": {
+        "detected": true,
+        "sim": 1.0
+      },
+      "center_crop_95pct": {
+        "detected": false,
+        "sim": null
+      },
+      "hflip": {
+        "detected": true,
+        "sim": 0.952620267868042
+      },
+      "jpeg_q50": {
+        "detected": true,
+        "sim": 0.9918153285980225
+      },
+      "gaussian_blur_r1": {
+        "detected": true,
+        "sim": 0.995076596736908
+      },
+      "brightness_minus15pct": {
+        "detected": true,
+        "sim": 0.9919742941856384
+      },
+      "brightness_plus15pct": {
+        "detected": true,
+        "sim": 0.958579957485199
+      }
+    },
+    "verdict": "FRAGILE"
+  }
+}

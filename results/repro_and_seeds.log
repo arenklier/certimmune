@@ -1,0 +1,6 @@
+repro_and_seeds.sh: line 13: set: -: invalid option
+set: usage: set [-abefhkmnptuvxBCEHPT] [-o option-name] [--] [-] [arg ...]
+repro_and_seeds.sh: line 14: cd: $'/mnt/data/certimmune/src\r': No such file or directory
+repro_and_seeds.sh: line 20: $'\r': command not found
+repro_and_seeds.sh: line 28: syntax error near unexpected token `$'do\r''
+repro_and_seeds.sh: line 28: `for rep in r1 r2; do'

@@ -1,0 +1,237 @@
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:01<00:03,  1.00it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  67%|██████▋   | 4/6 [00:02<00:01,  1.64it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  2.32it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.93it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+unprotected      10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 9
+antipure         6 5 3 4 1 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ours_wcmatch17   1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+DENSE DONE
+D2 DONE
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:02<00:04,  1.09s/it]Loading pipeline components...:  50%|█████     | 3/6 [00:02<00:02,  1.12it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  2.32it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.81it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/peft/mapping_func.py:72: UserWarning: You are trying to modify a model with PEFT for a second time. If you want to reload the model with a different config, make sure to call `.unload()` before.
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:302: UserWarning: Already found a `peft_config` attribute in the model. This will lead to having multiple adapters in the model. Make sure to know what you are doing!
+  warnings.warn(
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_19
+Reference embedding: 4 images from ../data/metacloak_identities/identity_19  [SAME AS TRAINING SET]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: clean ===
+  proxy (purified SET ArcFace sim to clean): 1.0000
+    step    0: loss=0.2068 (inst=0.0429)
+    step  100: loss=0.1904 (inst=0.0799)
+    step  200: loss=0.0410 (inst=0.0042)
+    step  300: loss=0.0130 (inst=0.0088)
+    step  400: loss=0.8095 (inst=0.6739)
+    step  500: loss=0.5096 (inst=0.0436)
+    step  600: loss=0.3739 (inst=0.3698)
+    step  700: loss=0.2398 (inst=0.0055)
+    step  800: loss=0.1385 (inst=0.1341)
+    step  900: loss=0.2135 (inst=0.1983)
+    step 1000: loss=0.0293 (inst=0.0193)
+    step 1100: loss=0.7101 (inst=0.4596)
+    step 1199: loss=0.0250 (inst=0.0189)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.3223
+  individual: [0.5624, 0.588, 0.1668, 0.0, 0.2755, 0.0, 0.2478, -0.0168, 0.1961, 0.3982, 0.4743, 0.4557, 0.0689, 0.586, 0.2019, 0.1016, 0.7227, 0.6738, 0.5532, 0.1902]
+
+=== condition: diffpure_t50 ===
+  proxy (purified SET ArcFace sim to clean): 0.9363
+    step    0: loss=0.2076 (inst=0.0437)
+    step  100: loss=0.1871 (inst=0.0769)
+    step  200: loss=0.0414 (inst=0.0046)
+    step  300: loss=0.0127 (inst=0.0085)
+    step  400: loss=0.7167 (inst=0.5810)
+    step  500: loss=0.5087 (inst=0.0426)
+    step  600: loss=0.3296 (inst=0.3254)
+    step  700: loss=0.2404 (inst=0.0056)
+    step  800: loss=0.1391 (inst=0.1346)
+    step  900: loss=0.1872 (inst=0.1720)
+    step 1000: loss=0.0290 (inst=0.0196)
+    step 1100: loss=0.6443 (inst=0.3926)
+    step 1199: loss=0.0245 (inst=0.0183)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.2675
+  individual: [0.4955, 0.5029, 0.1393, 0.0, 0.0071, 0.1295, 0.0, 0.3996, 0.4517, 0.4732, 0.5081, 0.0, 0.4134, 0.0, 0.2064, 0.0969, 0.558, 0.5258, 0.4787, -0.0358]
+
+=== condition: diffpure_t100 ===
+  proxy (purified SET ArcFace sim to clean): 0.8698
+    step    0: loss=0.2067 (inst=0.0428)
+    step  100: loss=0.1830 (inst=0.0727)
+    step  200: loss=0.0413 (inst=0.0045)
+    step  300: loss=0.0127 (inst=0.0085)
+    step  400: loss=0.6393 (inst=0.5035)
+    step  500: loss=0.5076 (inst=0.0402)
+    step  600: loss=0.2808 (inst=0.2767)
+    step  700: loss=0.2403 (inst=0.0056)
+    step  800: loss=0.1321 (inst=0.1276)
+    step  900: loss=0.1610 (inst=0.1458)
+    step 1000: loss=0.0288 (inst=0.0191)
+    step 1100: loss=0.5823 (inst=0.3299)
+    step 1199: loss=0.0236 (inst=0.0175)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.1520
+  individual: [0.0, 0.0, 0.1535, 0.1396, 0.3383, 0.1974, 0.2346, 0.0154, 0.1184, 0.3629, 0.0, 0.0634, 0.1254, 0.0, 0.0663, 0.1776, 0.6399, 0.2492, 0.0604, 0.0976]
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.7898
+    step    0: loss=0.2035 (inst=0.0396)
+    step  100: loss=0.1739 (inst=0.0633)
+    step  200: loss=0.0409 (inst=0.0042)
+    step  300: loss=0.0130 (inst=0.0088)
+    step  400: loss=0.5239 (inst=0.3878)
+    step  500: loss=0.5012 (inst=0.0332)
+    step  600: loss=0.1907 (inst=0.1866)
+    step  700: loss=0.2399 (inst=0.0052)
+    step  800: loss=0.1124 (inst=0.1080)
+    step  900: loss=0.1187 (inst=0.1035)
+    step 1000: loss=0.0252 (inst=0.0154)
+    step 1100: loss=0.4744 (inst=0.2216)
+    step 1199: loss=0.0222 (inst=0.0160)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.1234
+  individual: [0.2317, 0.0608, 0.1649, -0.0216, 0.0046, 0.1278, 0.2325, 0.0, 0.0988, 0.3782, 0.0, -0.0141, 0.1461, 0.0, 0.0548, 0.0817, 0.4452, 0.2039, 0.3134, -0.0406]
+
+=== Summary: proxy vs real ===
+  clean                proxy=1.0000  real_mean=0.3223
+  diffpure_t50         proxy=0.9363  real_mean=0.2675
+  diffpure_t100        proxy=0.8698  real_mean=0.1520
+  diffpure_t200        proxy=0.7898  real_mean=0.1234
+
+Saved to ../results/lora_calib_identity_19_unprotected_lowt.json
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  33%|███▎      | 2/6 [00:00<00:01,  2.62it/s]Loading pipeline components...:  50%|█████     | 3/6 [00:01<00:01,  2.09it/s]Loading pipeline components...:  67%|██████▋   | 4/6 [00:03<00:02,  1.15s/it]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.64it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/peft/mapping_func.py:72: UserWarning: You are trying to modify a model with PEFT for a second time. If you want to reload the model with a different config, make sure to call `.unload()` before.
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:302: UserWarning: Already found a `peft_config` attribute in the model. This will lead to having multiple adapters in the model. Make sure to know what you are doing!
+  warnings.warn(
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_19_protected
+Reference embedding: 4 images from ../data/metacloak_identities/identity_19  [FIXED CLEAN REFERENCE]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: clean ===
+  proxy (purified SET ArcFace sim to clean): 0.9394
+    step    0: loss=0.2096 (inst=0.0457)
+    step  100: loss=0.2123 (inst=0.1019)
+    step  200: loss=0.0412 (inst=0.0044)
+    step  300: loss=0.0151 (inst=0.0109)
+    step  400: loss=0.8862 (inst=0.7503)
+    step  500: loss=0.5291 (inst=0.0632)
+    step  600: loss=0.4799 (inst=0.4758)
+    step  700: loss=0.2404 (inst=0.0062)
+    step  800: loss=0.1656 (inst=0.1612)
+    step  900: loss=0.2964 (inst=0.2812)
+    step 1000: loss=0.0312 (inst=0.0213)
+    step 1100: loss=0.8300 (inst=0.5766)
+    step 1199: loss=0.0278 (inst=0.0216)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0305
+  individual: [0.0, 0.0, -0.0447, 0.0, 0.0, -0.0552, 0.0821, 0.1091, 0.0269, 0.0672, 0.0206, 0.0, 0.1655, 0.0, 0.0291, 0.0743, 0.0999, -0.0322, 0.1242, -0.0573]
+
+=== condition: diffpure_t50 ===
+  proxy (purified SET ArcFace sim to clean): 0.2893
+    step    0: loss=0.2137 (inst=0.0498)
+    step  100: loss=0.2164 (inst=0.1060)
+    step  200: loss=0.0416 (inst=0.0047)
+    step  300: loss=0.0157 (inst=0.0114)
+    step  400: loss=0.8201 (inst=0.6841)
+    step  500: loss=0.5322 (inst=0.0664)
+    step  600: loss=0.4372 (inst=0.4331)
+    step  700: loss=0.2408 (inst=0.0064)
+    step  800: loss=0.1744 (inst=0.1700)
+    step  900: loss=0.2825 (inst=0.2674)
+    step 1000: loss=0.0318 (inst=0.0219)
+    step 1100: loss=0.7692 (inst=0.5171)
+    step 1199: loss=0.0290 (inst=0.0228)
+  REAL attack success (mean ArcFace sim of 20 generations): -0.0062
+  individual: [0.0, 0.0218, -0.0914, -0.0065, -0.0174, 0.0, -0.057, -0.0053, 0.0216, 0.0203, 0.0202, 0.0, 0.0, 0.0, 0.1689, -0.1109, -0.0324, 0.0103, -0.0537, -0.0118]
+
+=== condition: diffpure_t100 ===
+  proxy (purified SET ArcFace sim to clean): 0.2061
+    step    0: loss=0.2125 (inst=0.0486)
+    step  100: loss=0.2116 (inst=0.1010)
+    step  200: loss=0.0414 (inst=0.0046)
+    step  300: loss=0.0155 (inst=0.0112)
+    step  400: loss=0.7386 (inst=0.6025)
+    step  500: loss=0.5305 (inst=0.0645)
+    step  600: loss=0.3886 (inst=0.3845)
+    step  700: loss=0.2404 (inst=0.0062)
+    step  800: loss=0.1657 (inst=0.1613)
+    step  900: loss=0.2466 (inst=0.2314)
+    step 1000: loss=0.0308 (inst=0.0208)
+    step 1100: loss=0.7000 (inst=0.4468)
+    step 1199: loss=0.0276 (inst=0.0214)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0029
+  individual: [0.0, 0.0, 0.0658, 0.0, 0.0, 0.0, 0.0, -0.0189, 0.0337, 0.014, -0.0317, -0.0369, 0.0, 0.0, 0.0, 0.0, 0.0116, 0.107, -0.0004, -0.087]
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.1584
+    step    0: loss=0.2078 (inst=0.0439)
+    step  100: loss=0.1957 (inst=0.0849)
+    step  200: loss=0.0410 (inst=0.0042)
+    step  300: loss=0.0144 (inst=0.0101)
+    step  400: loss=0.6191 (inst=0.4829)
+    step  500: loss=0.5197 (inst=0.0526)
+    step  600: loss=0.2769 (inst=0.2729)
+    step  700: loss=0.2399 (inst=0.0055)
+    step  800: loss=0.1442 (inst=0.1398)
+    step  900: loss=0.1804 (inst=0.1652)
+    step 1000: loss=0.0289 (inst=0.0188)
+    step 1100: loss=0.5681 (inst=0.3139)
+    step 1199: loss=0.0241 (inst=0.0180)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0274
+  individual: [0.0, 0.0884, 0.0322, 0.009, 0.0, 0.0065, 0.1421, -0.0396, 0.0645, -0.0858, -0.0576, 0.0119, 0.0, 0.056, 0.1689, -0.0424, 0.1329, -0.0799, 0.0719, 0.0694]
+
+=== Summary: proxy vs real ===
+  clean                proxy=0.9394  real_mean=0.0305
+  diffpure_t50         proxy=0.2893  real_mean=-0.0062
+  diffpure_t100        proxy=0.2061  real_mean=0.0029
+  diffpure_t200        proxy=0.1584  real_mean=0.0274
+
+Saved to ../results/lora_calib_identity_19_protected_lowt.json
+D3 DONE

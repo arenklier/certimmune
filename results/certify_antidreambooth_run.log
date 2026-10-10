@@ -1,0 +1,56 @@
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:00,  8.93it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  67%|██████▋   | 4/6 [00:00<00:00, 10.77it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00,  6.65it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00,  7.26it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+=== Certifying UNPROTECTED baseline (tau=0.5, Theta=[100, 150, 200, 250, 300, 350, 400], n=20) ===
+  t*= 100  k/n=20/20  phat=1.000
+  t*= 150  k/n=20/20  phat=1.000
+  t*= 200  k/n=20/20  phat=1.000
+  t*= 250  k/n=20/20  phat=1.000
+  t*= 300  k/n=20/20  phat=1.000
+  t*= 350  k/n=20/20  phat=1.000
+  t*= 400  k/n=19/20  phat=0.950
+
+=== Certifying IMMUNIZED (v0.2 EOT delta) (tau=0.5, Theta=[100, 150, 200, 250, 300, 350, 400], n=20) ===
+  t*= 100  k/n=18/20  phat=0.900
+  t*= 150  k/n=8/20  phat=0.400
+  t*= 200  k/n=0/20  phat=0.000
+  t*= 250  k/n=0/20  phat=0.000
+  t*= 300  k/n=0/20  phat=0.000
+  t*= 350  k/n=0/20  phat=0.000
+  t*= 400  k/n=0/20  phat=0.000
+
+--- Certificate: unprotected ---
+  Clopper-Pearson upper bounds per t*: {100: 1.0, 150: 1.0, 200: 1.0, 250: 1.0, 300: 1.0, 350: 1.0, 400: 0.997}
+  max CP upper bound (over grid):      1.0000
+  empirical L_sigma_hat:                0.001000
+  grid-Lipschitz residual term:         0.0250
+  ==> alpha_final = 1.0250
+  ==> this is a (epsilon=8/255, tau=0.5, Theta=[100, 150, 200, 250, 300, 350, 400], alpha=1.0250)-certified claim
+
+--- Certificate: immunized (v0.2 EOT delta) ---
+  Clopper-Pearson upper bounds per t*: {100: 0.982, 150: 0.606, 200: 0.139, 250: 0.139, 300: 0.139, 350: 0.139, 400: 0.139}
+  max CP upper bound (over grid):      0.9819
+  empirical L_sigma_hat:                0.010000
+  grid-Lipschitz residual term:         0.2500
+  ==> alpha_final = 1.2319
+  ==> this is a (epsilon=8/255, tau=0.5, Theta=[100, 150, 200, 250, 300, 350, 400], alpha=1.2319)-certified claim
+
+Saved to ../results/certificate_antidreambooth.json

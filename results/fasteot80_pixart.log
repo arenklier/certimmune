@@ -1,0 +1,47 @@
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s][A
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:06<00:20,  6.95s/it][A
+Loading checkpoint shards:  50%|█████     | 2/4 [00:13<00:13,  6.57s/it][A
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:18<00:06,  6.12s/it][A
+Loading checkpoint shards: 100%|██████████| 4/4 [00:24<00:00,  5.99s/it][ALoading checkpoint shards: 100%|██████████| 4/4 [00:24<00:00,  6.16s/it]
+Loading pipeline components...:  40%|████      | 2/5 [00:24<00:37, 12.38s/it]Loading pipeline components...:  60%|██████    | 3/5 [00:24<00:14,  7.29s/it]Some weights of the model checkpoint were not used when initializing PixArtTransformer2DModel: 
+ ['caption_projection.y_embedding']
+Loading pipeline components...:  80%|████████  | 4/5 [00:30<00:06,  6.48s/it]Loading pipeline components...: 100%|██████████| 5/5 [00:31<00:00,  4.60s/it]Loading pipeline components...: 100%|██████████| 5/5 [00:31<00:00,  6.22s/it]
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+grid=[100, 150, 200, 250, 300, 350, 400]  n=30  tau=0.50
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+  identity_00            immunized    alpha_marg=0.0950  alpha_sim=0.1519   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.34 0.27 0.15 0.14 0.04 0.05 0.01
+  -> certificate_pixart_identity_00.json  (131 s)
+  skip identity_01            (already done)
+  skip identity_02            (already done)
+  skip identity_04            (already done)
+  skip identity_05            (already done)
+  skip identity_06            (already done)
+  skip identity_07            (already done)
+  skip identity_08            (already done)
+  skip identity_09            (already done)
+  skip identity_10            (already done)
+  skip identity_11            (already done)
+  skip identity_12            (already done)
+  skip identity_13            (already done)
+  skip identity_14            (already done)
+  skip identity_15            (already done)
+  skip identity_16            (already done)
+  skip identity_17            (already done)
+  skip identity_18            (already done)
+  skip identity_19            (already done)
+  skip identity_20            (already done)

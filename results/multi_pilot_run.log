@@ -1,0 +1,123 @@
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Found 5 identities: ['data/celebahq_sample/identity_00.png', 'data/celebahq_sample/identity_01.png', 'data/celebahq_sample/identity_02.png', 'data/celebahq_sample/identity_03.png', 'data/celebahq_sample/identity_04.png']
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:03,  1.51it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:02<00:06,  1.55s/it]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  2.00it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.67it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+
+=== identity_00: DiffPure sweep ===
+  t*=  50  mean_sim=0.9018  std=0.0067  detected=8/8
+  t*= 100  mean_sim=0.8349  std=0.0130  detected=8/8
+  t*= 150  mean_sim=0.7871  std=0.0189  detected=8/8
+  t*= 200  mean_sim=0.7334  std=0.0240  detected=8/8
+  t*= 250  mean_sim=0.6951  std=0.0292  detected=8/8
+  t*= 300  mean_sim=0.6439  std=0.0327  detected=8/8
+  t*= 400  mean_sim=0.5448  std=0.0342  detected=8/8
+  t*= 500  mean_sim=0.4410  std=0.0349  detected=8/8
+=== identity_00: GrIDPure sweep ===
+  R=1  mean_sim=0.7698  std=0.0255  detected=6/6
+  R=2  mean_sim=0.6500  std=0.0546  detected=6/6
+  R=3  mean_sim=0.5355  std=0.0424  detected=6/6
+  R=4  mean_sim=0.4534  std=0.0485  detected=6/6
+  R=5  mean_sim=0.3877  std=0.0549  detected=6/6
+
+=== identity_01: DiffPure sweep ===
+  t*=  50  mean_sim=0.8695  std=0.0196  detected=8/8
+  t*= 100  mean_sim=0.8088  std=0.0265  detected=8/8
+  t*= 150  mean_sim=0.7677  std=0.0308  detected=8/8
+  t*= 200  mean_sim=0.7180  std=0.0291  detected=8/8
+  t*= 250  mean_sim=0.6759  std=0.0276  detected=8/8
+  t*= 300  mean_sim=0.6294  std=0.0308  detected=8/8
+  t*= 400  mean_sim=0.5319  std=0.0410  detected=8/8
+  t*= 500  mean_sim=0.4049  std=0.0580  detected=8/8
+=== identity_01: GrIDPure sweep ===
+  R=1  mean_sim=0.4789  std=0.3390  detected=4/6
+  R=2  mean_sim=0.4645  std=0.2176  detected=5/6
+  R=3  mean_sim=0.1774  std=0.2512  detected=2/6
+  R=4  mean_sim=0.0542  std=0.1212  detected=1/6
+  R=5  mean_sim=0.0000  std=0.0000  detected=0/6
+
+=== identity_02: DiffPure sweep ===
+  t*=  50  mean_sim=0.7880  std=0.2981  detected=7/8
+  t*= 100  mean_sim=0.6253  std=0.3613  detected=6/8
+  t*= 150  mean_sim=0.4987  std=0.3865  detected=5/8
+  t*= 200  mean_sim=0.2846  std=0.3674  detected=3/8
+  t*= 250  mean_sim=0.0908  std=0.2402  detected=1/8
+  t*= 300  mean_sim=0.1555  std=0.2708  detected=2/8
+  t*= 400  mean_sim=0.0000  std=0.0000  detected=0/8
+  t*= 500  mean_sim=0.1023  std=0.1773  detected=2/8
+=== identity_02: GrIDPure sweep ===
+  R=1  mean_sim=0.3603  std=0.3616  detected=3/6
+  R=2  mean_sim=0.4198  std=0.2052  detected=5/6
+  R=3  mean_sim=0.2825  std=0.2135  detected=4/6
+  R=4  mean_sim=0.3248  std=0.1863  detected=5/6
+  R=5  mean_sim=0.1774  std=0.2041  detected=3/6
+
+=== identity_03: DiffPure sweep ===
+  t*=  50  mean_sim=0.8869  std=0.0174  detected=8/8
+  t*= 100  mean_sim=0.8137  std=0.0292  detected=8/8
+  t*= 150  mean_sim=0.7582  std=0.0407  detected=8/8
+  t*= 200  mean_sim=0.7045  std=0.0509  detected=8/8
+  t*= 250  mean_sim=0.6574  std=0.0620  detected=8/8
+  t*= 300  mean_sim=0.6029  std=0.0696  detected=8/8
+  t*= 400  mean_sim=0.5021  std=0.0863  detected=8/8
+  t*= 500  mean_sim=0.3668  std=0.1676  detected=7/8
+=== identity_03: GrIDPure sweep ===
+  R=1  mean_sim=0.4756  std=0.3397  detected=4/6
+  R=2  mean_sim=0.4018  std=0.2846  detected=4/6
+  R=3  mean_sim=0.0846  std=0.1892  detected=1/6
+  R=4  mean_sim=0.1557  std=0.2231  detected=2/6
+  R=5  mean_sim=0.0667  std=0.1492  detected=1/6
+
+=== identity_04: DiffPure sweep ===
+  t*=  50  mean_sim=0.9032  std=0.0061  detected=8/8
+  t*= 100  mean_sim=0.8393  std=0.0202  detected=8/8
+  t*= 150  mean_sim=0.7855  std=0.0283  detected=8/8
+  t*= 200  mean_sim=0.7273  std=0.0390  detected=8/8
+  t*= 250  mean_sim=0.6761  std=0.0436  detected=8/8
+  t*= 300  mean_sim=0.6217  std=0.0530  detected=8/8
+  t*= 400  mean_sim=0.5218  std=0.0607  detected=8/8
+  t*= 500  mean_sim=0.4312  std=0.0660  detected=8/8
+=== identity_04: GrIDPure sweep ===
+  R=1  mean_sim=0.7158  std=0.0537  detected=6/6
+  R=2  mean_sim=0.5651  std=0.0274  detected=6/6
+  R=3  mean_sim=0.5150  std=0.0304  detected=6/6
+  R=4  mean_sim=0.2921  std=0.2088  detected=4/6
+  R=5  mean_sim=0.2364  std=0.1709  detected=4/6
+
+[diffpure] aggregated across 5 identities:
+  50: 0.8699
+  100: 0.7844
+  150: 0.7194
+  200: 0.6335
+  250: 0.5591
+  300: 0.5307
+  400: 0.4201
+  500: 0.3492
+  max adjacent-slope=0.001718  mean adjacent-slope=0.001228
+
+[gridpure] aggregated across 5 identities:
+  1: 0.5601
+  2: 0.5002
+  3: 0.3190
+  4: 0.2560
+  5: 0.1736
+  max adjacent-slope=0.181237  mean adjacent-slope=0.096615
+
+Saved to results/a1_multi_pilot.json

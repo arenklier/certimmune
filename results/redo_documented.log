@@ -1,0 +1,847 @@
+############ identity_3 (documented protocol) ############
+--- UNPROTECTED ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:02,  1.70it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  67%|██████▋   | 4/6 [00:02<00:01,  1.52it/s]Loading pipeline components...:  83%|████████▎ | 5/6 [00:03<00:00,  1.54it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.85it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_3
+Reference embedding: 4 images from ../data/metacloak_identities/identity_3  [SAME AS TRAINING SET]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.7577
+    step    0: loss=0.1890 (inst=0.0251)
+    step  100: loss=0.1824 (inst=0.0722)
+    step  200: loss=0.0406 (inst=0.0041)
+    step  300: loss=0.0128 (inst=0.0086)
+    step  400: loss=0.5783 (inst=0.4432)
+    step  500: loss=0.5043 (inst=0.0392)
+    step  600: loss=0.2026 (inst=0.1985)
+    step  700: loss=0.2376 (inst=0.0036)
+    step  800: loss=0.0767 (inst=0.0722)
+    step  900: loss=0.1533 (inst=0.1382)
+    step 1000: loss=0.0258 (inst=0.0163)
+    step 1100: loss=0.4990 (inst=0.2489)
+    step 1199: loss=0.0242 (inst=0.0181)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0256
+  individual: [0.0, 0.0, 0.0693, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0651, 0.0676, 0.1915, 0.0, 0.0, 0.0, 0.1668, -0.0479, 0.0, 0.0, 0.0]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.7577  real_mean=0.0256
+
+Saved to ../results/lora_calib_identity_3_unprotected_doc.json
+--- PROTECTED (fixed clean reference) ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:00<00:01,  2.36it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  83%|████████▎ | 5/6 [00:01<00:00,  3.67it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.49it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.79it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_3_protected
+Reference embedding: 4 images from ../data/metacloak_identities/identity_3  [FIXED CLEAN REFERENCE]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.1312
+    step    0: loss=0.1968 (inst=0.0330)
+    step  100: loss=0.1926 (inst=0.0822)
+    step  200: loss=0.0410 (inst=0.0044)
+    step  300: loss=0.0145 (inst=0.0103)
+    step  400: loss=0.6270 (inst=0.4917)
+    step  500: loss=0.5236 (inst=0.0571)
+    step  600: loss=0.2997 (inst=0.2956)
+    step  700: loss=0.2384 (inst=0.0046)
+    step  800: loss=0.1113 (inst=0.1068)
+    step  900: loss=0.1846 (inst=0.1694)
+    step 1000: loss=0.0273 (inst=0.0178)
+    step 1100: loss=0.6030 (inst=0.3510)
+    step 1199: loss=0.0249 (inst=0.0185)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0152
+  individual: [0.0919, -0.0783, 0.1552, 0.0, -0.018, -0.1452, 0.0, 0.0, -0.0205, -0.0074, 0.0847, 0.0, -0.0559, 0.0, 0.0, 0.0049, 0.1061, 0.1476, 0.0391, 0.0]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.1312  real_mean=0.0152
+
+Saved to ../results/lora_calib_identity_3_protected_doc.json
+
+############ identity_17 (documented protocol) ############
+--- UNPROTECTED ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  50%|█████     | 3/6 [00:02<00:02,  1.38it/s]Loading pipeline components...:  67%|██████▋   | 4/6 [00:02<00:01,  1.59it/s]Loading pipeline components...:  83%|████████▎ | 5/6 [00:03<00:00,  1.60it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.86it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_17
+Reference embedding: 4 images from ../data/metacloak_identities/identity_17  [SAME AS TRAINING SET]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.7951
+    step    0: loss=0.1969 (inst=0.0330)
+    step  100: loss=0.1758 (inst=0.0653)
+    step  200: loss=0.0409 (inst=0.0044)
+    step  300: loss=0.0107 (inst=0.0065)
+    step  400: loss=0.5709 (inst=0.4355)
+    step  500: loss=0.5016 (inst=0.0364)
+    step  600: loss=0.2184 (inst=0.2142)
+    step  700: loss=0.2391 (inst=0.0048)
+    step  800: loss=0.0866 (inst=0.0822)
+    step  900: loss=0.1501 (inst=0.1349)
+    step 1000: loss=0.0232 (inst=0.0141)
+    step 1100: loss=0.5048 (inst=0.2547)
+    step 1199: loss=0.0225 (inst=0.0161)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0992
+  individual: [0.1535, 0.0, 0.0165, 0.0381, 0.0, 0.0922, 0.0, 0.0, 0.1645, 0.3028, 0.0662, 0.2364, 0.0237, 0.0, 0.1173, 0.0552, 0.0, 0.3375, 0.1444, 0.235]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.7951  real_mean=0.0992
+
+Saved to ../results/lora_calib_identity_17_unprotected_doc.json
+--- PROTECTED (fixed clean reference) ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:02<00:04,  1.09s/it]Loading pipeline components...:  50%|█████     | 3/6 [00:02<00:02,  1.11it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  83%|████████▎ | 5/6 [00:03<00:00,  1.82it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.80it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_17_protected
+Reference embedding: 4 images from ../data/metacloak_identities/identity_17  [FIXED CLEAN REFERENCE]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.0567
+    step    0: loss=0.2000 (inst=0.0361)
+    step  100: loss=0.1982 (inst=0.0874)
+    step  200: loss=0.0409 (inst=0.0043)
+    step  300: loss=0.0134 (inst=0.0092)
+    step  400: loss=0.6624 (inst=0.5264)
+    step  500: loss=0.5181 (inst=0.0522)
+    step  600: loss=0.3229 (inst=0.3188)
+    step  700: loss=0.2387 (inst=0.0049)
+    step  800: loss=0.1049 (inst=0.1005)
+    step  900: loss=0.2117 (inst=0.1963)
+    step 1000: loss=0.0265 (inst=0.0174)
+    step 1100: loss=0.6226 (inst=0.3712)
+    step 1199: loss=0.0272 (inst=0.0211)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0908
+  individual: [0.0563, 0.0496, 0.115, 0.1147, 0.0519, 0.1427, 0.129, 0.1478, 0.1073, 0.0626, 0.0959, 0.115, 0.0, 0.0844, 0.1389, 0.1274, -0.0207, 0.0663, 0.1228, 0.1092]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.0567  real_mean=0.0908
+
+Saved to ../results/lora_calib_identity_17_protected_doc.json
+
+############ identity_38 (documented protocol) ############
+--- UNPROTECTED ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:04,  1.22it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:02<00:05,  1.44s/it]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  67%|██████▋   | 4/6 [00:03<00:01,  1.45it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.88it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_38
+Reference embedding: 4 images from ../data/metacloak_identities/identity_38  [SAME AS TRAINING SET]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.7205
+    step    0: loss=0.1986 (inst=0.0347)
+    step  100: loss=0.1733 (inst=0.0627)
+    step  200: loss=0.0408 (inst=0.0042)
+    step  300: loss=0.0112 (inst=0.0070)
+    step  400: loss=0.5802 (inst=0.4443)
+    step  500: loss=0.5022 (inst=0.0372)
+    step  600: loss=0.2561 (inst=0.2519)
+    step  700: loss=0.2389 (inst=0.0051)
+    step  800: loss=0.0978 (inst=0.0934)
+    step  900: loss=0.1553 (inst=0.1400)
+    step 1000: loss=0.0239 (inst=0.0141)
+    step 1100: loss=0.5523 (inst=0.3025)
+    step 1199: loss=0.0219 (inst=0.0156)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.1376
+  individual: [0.0, 0.141, 0.0203, 0.2985, 0.0, 0.1508, 0.1799, 0.2146, 0.0425, 0.3255, 0.2375, 0.0, 0.0257, 0.0, 0.1373, 0.0836, 0.0939, 0.3092, 0.3326, 0.1597]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.7205  real_mean=0.1376
+
+Saved to ../results/lora_calib_identity_38_unprotected_doc.json
+--- PROTECTED (fixed clean reference) ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:03,  1.26it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  67%|██████▋   | 4/6 [00:01<00:00,  3.23it/s]Loading pipeline components...:  83%|████████▎ | 5/6 [00:03<00:00,  1.36it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.85it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_38_protected
+Reference embedding: 4 images from ../data/metacloak_identities/identity_38  [FIXED CLEAN REFERENCE]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.1464
+    step    0: loss=0.2042 (inst=0.0403)
+    step  100: loss=0.1939 (inst=0.0832)
+    step  200: loss=0.0410 (inst=0.0044)
+    step  300: loss=0.0119 (inst=0.0077)
+    step  400: loss=0.6659 (inst=0.5300)
+    step  500: loss=0.5130 (inst=0.0468)
+    step  600: loss=0.3127 (inst=0.3085)
+    step  700: loss=0.2393 (inst=0.0057)
+    step  800: loss=0.1280 (inst=0.1236)
+    step  900: loss=0.2172 (inst=0.2019)
+    step 1000: loss=0.0267 (inst=0.0169)
+    step 1100: loss=0.6145 (inst=0.3653)
+    step 1199: loss=0.0242 (inst=0.0181)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0426
+  individual: [0.0292, 0.0585, 0.0553, -0.0103, 0.0, 0.097, 0.1285, -0.0172, 0.0623, 0.0948, 0.0655, 0.0, -0.0084, 0.0, 0.0105, 0.0197, 0.1228, 0.0445, 0.0309, 0.0687]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.1464  real_mean=0.0426
+
+Saved to ../results/lora_calib_identity_38_protected_doc.json
+
+############ identity_9 (documented protocol) ############
+--- UNPROTECTED ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:02,  2.15it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  83%|████████▎ | 5/6 [00:02<00:00,  2.03it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.91it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.95it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_9
+Reference embedding: 4 images from ../data/metacloak_identities/identity_9  [SAME AS TRAINING SET]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.7538
+    step    0: loss=0.1967 (inst=0.0328)
+    step  100: loss=0.1840 (inst=0.0738)
+    step  200: loss=0.0400 (inst=0.0035)
+    step  300: loss=0.0137 (inst=0.0095)
+    step  400: loss=0.5718 (inst=0.4363)
+    step  500: loss=0.5106 (inst=0.0474)
+    step  600: loss=0.2467 (inst=0.2426)
+    step  700: loss=0.2390 (inst=0.0051)
+    step  800: loss=0.1007 (inst=0.0964)
+    step  900: loss=0.1691 (inst=0.1539)
+    step 1000: loss=0.0245 (inst=0.0150)
+    step 1100: loss=0.5436 (inst=0.2934)
+    step 1199: loss=0.0246 (inst=0.0184)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.1631
+  individual: [0.4019, 0.1442, 0.2237, 0.4021, -0.0103, 0.3025, 0.0, 0.0237, 0.0, 0.2628, 0.366, 0.2532, 0.0, 0.0, 0.331, 0.0911, 0.0, 0.2324, 0.238, 0.0]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.7538  real_mean=0.1631
+
+Saved to ../results/lora_calib_identity_9_unprotected_doc.json
+--- PROTECTED (fixed clean reference) ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:00<00:01,  2.57it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  83%|████████▎ | 5/6 [00:01<00:00,  4.06it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.53it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.86it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_9_protected
+Reference embedding: 4 images from ../data/metacloak_identities/identity_9  [FIXED CLEAN REFERENCE]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.1305
+    step    0: loss=0.2037 (inst=0.0398)
+    step  100: loss=0.1987 (inst=0.0883)
+    step  200: loss=0.0405 (inst=0.0039)
+    step  300: loss=0.0139 (inst=0.0097)
+    step  400: loss=0.6666 (inst=0.5311)
+    step  500: loss=0.5186 (inst=0.0538)
+    step  600: loss=0.3060 (inst=0.3019)
+    step  700: loss=0.2395 (inst=0.0056)
+    step  800: loss=0.1373 (inst=0.1330)
+    step  900: loss=0.2185 (inst=0.2034)
+    step 1000: loss=0.0268 (inst=0.0177)
+    step 1100: loss=0.6118 (inst=0.3612)
+    step 1199: loss=0.0255 (inst=0.0192)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0190
+  individual: [0.0, -0.0914, 0.0209, 0.0388, 0.0, 0.0498, 0.0, 0.0073, -0.0372, 0.0983, 0.1161, -0.0762, 0.0, 0.0, 0.0347, 0.0, 0.0822, 0.0, 0.0778, 0.0593]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.1305  real_mean=0.0190
+
+Saved to ../results/lora_calib_identity_9_protected_doc.json
+
+############ identity_8 (documented protocol) ############
+--- UNPROTECTED ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:03,  1.36it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:02<00:05,  1.44s/it]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  2.08it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.74it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_8
+Reference embedding: 4 images from ../data/metacloak_identities/identity_8  [SAME AS TRAINING SET]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.7514
+    step    0: loss=0.1910 (inst=0.0271)
+    step  100: loss=0.1858 (inst=0.0749)
+    step  200: loss=0.0399 (inst=0.0034)
+    step  300: loss=0.0098 (inst=0.0056)
+    step  400: loss=0.5876 (inst=0.4523)
+    step  500: loss=0.4931 (inst=0.0273)
+    step  600: loss=0.2079 (inst=0.2037)
+    step  700: loss=0.2376 (inst=0.0043)
+    step  800: loss=0.0773 (inst=0.0730)
+    step  900: loss=0.1634 (inst=0.1480)
+    step 1000: loss=0.0234 (inst=0.0142)
+    step 1100: loss=0.4930 (inst=0.2447)
+    step 1199: loss=0.0239 (inst=0.0178)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.1554
+  individual: [0.0, 0.0751, 0.0515, 0.3341, 0.0, 0.2222, 0.0, 0.0025, 0.2916, 0.228, 0.4804, 0.0, 0.1571, 0.0, 0.1216, 0.1985, 0.0, 0.4308, 0.4415, 0.0729]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.7514  real_mean=0.1554
+
+Saved to ../results/lora_calib_identity_8_unprotected_doc.json
+--- PROTECTED (fixed clean reference) ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:00<00:01,  2.40it/s]Loading pipeline components...:  50%|█████     | 3/6 [00:02<00:03,  1.07s/it]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.88it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.71it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_8_protected
+Reference embedding: 4 images from ../data/metacloak_identities/identity_8  [FIXED CLEAN REFERENCE]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.0105
+    step    0: loss=0.1994 (inst=0.0355)
+    step  100: loss=0.1879 (inst=0.0769)
+    step  200: loss=0.0404 (inst=0.0038)
+    step  300: loss=0.0114 (inst=0.0072)
+    step  400: loss=0.6013 (inst=0.4655)
+    step  500: loss=0.5066 (inst=0.0402)
+    step  600: loss=0.2927 (inst=0.2887)
+    step  700: loss=0.2390 (inst=0.0049)
+    step  800: loss=0.1205 (inst=0.1162)
+    step  900: loss=0.1810 (inst=0.1658)
+    step 1000: loss=0.0257 (inst=0.0165)
+    step 1100: loss=0.6089 (inst=0.3584)
+    step 1199: loss=0.0234 (inst=0.0173)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0041
+  individual: [0.0, 0.0652, 0.1308, -0.0038, -0.0661, 0.0012, 0.0, -0.0248, -0.0002, -0.0145, 0.015, -0.0605, -0.0064, 0.018, 0.069, 0.0109, 0.0, -0.1152, 0.0274, 0.037]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.0105  real_mean=0.0041
+
+Saved to ../results/lora_calib_identity_8_protected_doc.json
+
+############ identity_37 (documented protocol) ############
+--- UNPROTECTED ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:01<00:05,  1.09s/it]Loading pipeline components...:  33%|███▎      | 2/6 [00:03<00:06,  1.58s/it]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  67%|██████▋   | 4/6 [00:03<00:01,  1.34it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.70it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_37
+Reference embedding: 4 images from ../data/metacloak_identities/identity_37  [SAME AS TRAINING SET]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.7479
+    step    0: loss=0.1954 (inst=0.0315)
+    step  100: loss=0.1667 (inst=0.0559)
+    step  200: loss=0.0407 (inst=0.0041)
+    step  300: loss=0.0105 (inst=0.0063)
+    step  400: loss=0.5497 (inst=0.4143)
+    step  500: loss=0.4963 (inst=0.0319)
+    step  600: loss=0.1889 (inst=0.1847)
+    step  700: loss=0.2384 (inst=0.0046)
+    step  800: loss=0.0953 (inst=0.0909)
+    step  900: loss=0.1379 (inst=0.1227)
+    step 1000: loss=0.0248 (inst=0.0155)
+    step 1100: loss=0.4663 (inst=0.2162)
+    step 1199: loss=0.0192 (inst=0.0132)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.1788
+  individual: [0.251, 0.2408, 0.1927, 0.2399, 0.059, 0.2569, 0.2182, 0.0222, 0.2145, 0.3139, 0.2767, 0.2796, -0.0112, 0.0, 0.1493, 0.2337, 0.2645, 0.0, 0.2897, 0.0856]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.7479  real_mean=0.1788
+
+Saved to ../results/lora_calib_identity_37_unprotected_doc.json
+--- PROTECTED (fixed clean reference) ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  67%|██████▋   | 4/6 [00:01<00:00,  2.03it/s]Loading pipeline components...:  83%|████████▎ | 5/6 [00:02<00:00,  1.92it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  2.01it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  2.00it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_37_protected
+Reference embedding: 4 images from ../data/metacloak_identities/identity_37  [FIXED CLEAN REFERENCE]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.1002
+    step    0: loss=0.2006 (inst=0.0367)
+    step  100: loss=0.1770 (inst=0.0665)
+    step  200: loss=0.0407 (inst=0.0040)
+    step  300: loss=0.0118 (inst=0.0075)
+    step  400: loss=0.5590 (inst=0.4233)
+    step  500: loss=0.5118 (inst=0.0468)
+    step  600: loss=0.2839 (inst=0.2798)
+    step  700: loss=0.2387 (inst=0.0047)
+    step  800: loss=0.1272 (inst=0.1228)
+    step  900: loss=0.1625 (inst=0.1474)
+    step 1000: loss=0.0258 (inst=0.0168)
+    step 1100: loss=0.5721 (inst=0.3212)
+    step 1199: loss=0.0218 (inst=0.0155)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0246
+  individual: [0.1173, 0.0543, -0.0512, -0.0193, 0.0, -0.0221, 0.0738, -0.0163, 0.1077, 0.0896, -0.0612, 0.0247, 0.0, 0.0, -0.0609, -0.003, 0.1408, 0.1107, 0.0023, 0.0041]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.1002  real_mean=0.0246
+
+Saved to ../results/lora_calib_identity_37_protected_doc.json
+
+############ identity_2 (documented protocol) ############
+--- UNPROTECTED ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:02<00:04,  1.03s/it]Loading pipeline components...:  67%|██████▋   | 4/6 [00:02<00:01,  1.63it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  2.25it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.88it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_2
+Reference embedding: 4 images from ../data/metacloak_identities/identity_2  [SAME AS TRAINING SET]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.6449
+    step    0: loss=0.2057 (inst=0.0418)
+    step  100: loss=0.1656 (inst=0.0552)
+    step  200: loss=0.0399 (inst=0.0034)
+    step  300: loss=0.0147 (inst=0.0105)
+    step  400: loss=0.5519 (inst=0.4167)
+    step  500: loss=0.5276 (inst=0.0626)
+    step  600: loss=0.2858 (inst=0.2817)
+    step  700: loss=0.2392 (inst=0.0050)
+    step  800: loss=0.1184 (inst=0.1140)
+    step  900: loss=0.1327 (inst=0.1174)
+    step 1000: loss=0.0238 (inst=0.0145)
+    step 1100: loss=0.5843 (inst=0.3357)
+    step 1199: loss=0.0196 (inst=0.0134)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.1169
+  individual: [0.2929, 0.2371, 0.095, 0.1681, 0.0, 0.117, -0.0365, 0.0, -0.029, 0.3418, 0.3994, 0.0, 0.1831, 0.0, 0.0, 0.0864, 0.0, 0.0, 0.3999, 0.0818]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.6449  real_mean=0.1169
+
+Saved to ../results/lora_calib_identity_2_unprotected_doc.json
+--- PROTECTED (fixed clean reference) ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:01<00:09,  1.93s/it]Loading pipeline components...:  50%|█████     | 3/6 [00:02<00:02,  1.36it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  2.60it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.96it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_2_protected
+Reference embedding: 4 images from ../data/metacloak_identities/identity_2  [FIXED CLEAN REFERENCE]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.1392
+    step    0: loss=0.2065 (inst=0.0426)
+    step  100: loss=0.1794 (inst=0.0688)
+    step  200: loss=0.0400 (inst=0.0033)
+    step  300: loss=0.0149 (inst=0.0106)
+    step  400: loss=0.6231 (inst=0.4874)
+    step  500: loss=0.5310 (inst=0.0670)
+    step  600: loss=0.3354 (inst=0.3314)
+    step  700: loss=0.2396 (inst=0.0049)
+    step  800: loss=0.1329 (inst=0.1286)
+    step  900: loss=0.1808 (inst=0.1656)
+    step 1000: loss=0.0257 (inst=0.0159)
+    step 1100: loss=0.6297 (inst=0.3796)
+    step 1199: loss=0.0218 (inst=0.0157)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0076
+  individual: [0.0428, 0.1625, 0.0258, 0.0, 0.0, 0.0682, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.0534, 0.0, -0.0737, -0.0193, 0.0]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.1392  real_mean=0.0076
+
+Saved to ../results/lora_calib_identity_2_protected_doc.json
+
+############ identity_15 (documented protocol) ############
+--- UNPROTECTED ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:03,  1.39it/s]Loading pipeline components...:  67%|██████▋   | 4/6 [00:02<00:01,  1.46it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.97it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.81it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_15
+Reference embedding: 4 images from ../data/metacloak_identities/identity_15  [SAME AS TRAINING SET]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.7120
+    step    0: loss=0.1858 (inst=0.0219)
+    step  100: loss=0.1675 (inst=0.0567)
+    step  200: loss=0.0401 (inst=0.0035)
+    step  300: loss=0.0116 (inst=0.0074)
+    step  400: loss=0.5856 (inst=0.4503)
+    step  500: loss=0.5071 (inst=0.0420)
+    step  600: loss=0.2265 (inst=0.2223)
+    step  700: loss=0.2381 (inst=0.0041)
+    step  800: loss=0.0674 (inst=0.0630)
+    step  900: loss=0.1505 (inst=0.1352)
+    step 1000: loss=0.0244 (inst=0.0152)
+    step 1100: loss=0.5147 (inst=0.2653)
+    step 1199: loss=0.0203 (inst=0.0141)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.1977
+  individual: [0.3963, 0.0, 0.1852, 0.0415, 0.0465, 0.1085, 0.0, 0.2281, 0.3663, 0.384, 0.3361, 0.233, 0.0, 0.3824, 0.3312, 0.0823, 0.0, 0.4835, 0.3489, 0.0]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.7120  real_mean=0.1977
+
+Saved to ../results/lora_calib_identity_15_unprotected_doc.json
+--- PROTECTED (fixed clean reference) ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:03,  1.50it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  67%|██████▋   | 4/6 [00:02<00:01,  1.36it/s]Loading pipeline components...:  83%|████████▎ | 5/6 [00:03<00:00,  1.42it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.69it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_15_protected
+Reference embedding: 4 images from ../data/metacloak_identities/identity_15  [FIXED CLEAN REFERENCE]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.1532
+    step    0: loss=0.1968 (inst=0.0329)
+    step  100: loss=0.1843 (inst=0.0735)
+    step  200: loss=0.0404 (inst=0.0037)
+    step  300: loss=0.0126 (inst=0.0084)
+    step  400: loss=0.6462 (inst=0.5103)
+    step  500: loss=0.5174 (inst=0.0519)
+    step  600: loss=0.2772 (inst=0.2731)
+    step  700: loss=0.2389 (inst=0.0051)
+    step  800: loss=0.1195 (inst=0.1152)
+    step  900: loss=0.2083 (inst=0.1931)
+    step 1000: loss=0.0260 (inst=0.0165)
+    step 1100: loss=0.6520 (inst=0.3585)
+    step 1199: loss=0.0222 (inst=0.0159)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0691
+  individual: [0.0908, 0.0, 0.0094, 0.1237, 0.1568, 0.123, 0.0, 0.084, 0.0232, 0.0977, 0.0734, 0.0823, 0.0601, 0.0, 0.119, 0.0, 0.0, 0.1205, 0.1338, 0.0844]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.1532  real_mean=0.0691
+
+Saved to ../results/lora_calib_identity_15_protected_doc.json
+
+############ identity_19 (documented protocol) ############
+--- UNPROTECTED ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:01<00:03,  1.21it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  67%|██████▋   | 4/6 [00:07<00:04,  2.08s/it]Loading pipeline components...: 100%|██████████| 6/6 [00:07<00:00,  1.19s/it]Loading pipeline components...: 100%|██████████| 6/6 [00:07<00:00,  1.31s/it]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_19
+Reference embedding: 4 images from ../data/metacloak_identities/identity_19  [SAME AS TRAINING SET]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.6939
+    step    0: loss=0.2008 (inst=0.0369)
+    step  100: loss=0.1693 (inst=0.0590)
+    step  200: loss=0.0405 (inst=0.0039)
+    step  300: loss=0.0117 (inst=0.0075)
+    step  400: loss=0.5117 (inst=0.3762)
+    step  500: loss=0.4955 (inst=0.0303)
+    step  600: loss=0.1857 (inst=0.1816)
+    step  700: loss=0.2386 (inst=0.0052)
+    step  800: loss=0.1056 (inst=0.1013)
+    step  900: loss=0.1150 (inst=0.0998)
+    step 1000: loss=0.0238 (inst=0.0145)
+    step 1100: loss=0.4679 (inst=0.2196)
+    step 1199: loss=0.0202 (inst=0.0140)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.1799
+  individual: [0.0, 0.0445, 0.1486, 0.3865, 0.0632, 0.0674, 0.0, 0.2992, 0.2608, 0.2062, 0.256, 0.279, 0.0, 0.2961, 0.0421, 0.0837, 0.3585, 0.4538, 0.3594, -0.0064]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.6939  real_mean=0.1799
+
+Saved to ../results/lora_calib_identity_19_unprotected_doc.json
+--- PROTECTED (fixed clean reference) ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:03,  1.40it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:02<00:05,  1.40s/it]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  83%|████████▎ | 5/6 [00:03<00:00,  1.77it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.82it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_19_protected
+Reference embedding: 4 images from ../data/metacloak_identities/identity_19  [FIXED CLEAN REFERENCE]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.0736
+    step    0: loss=0.2043 (inst=0.0404)
+    step  100: loss=0.1893 (inst=0.0787)
+    step  200: loss=0.0407 (inst=0.0040)
+    step  300: loss=0.0140 (inst=0.0098)
+    step  400: loss=0.5918 (inst=0.4563)
+    step  500: loss=0.5157 (inst=0.0505)
+    step  600: loss=0.2778 (inst=0.2738)
+    step  700: loss=0.2383 (inst=0.0048)
+    step  800: loss=0.1356 (inst=0.1312)
+    step  900: loss=0.1807 (inst=0.1655)
+    step 1000: loss=0.0270 (inst=0.0176)
+    step 1100: loss=0.5672 (inst=0.3199)
+    step 1199: loss=0.0231 (inst=0.0168)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0088
+  individual: [0.0831, 0.0592, 0.0522, 0.0112, -0.0231, 0.0439, 0.045, -0.0705, -0.1141, -0.0336, 0.0308, 0.0391, 0.0432, 0.0, -0.0284, 0.0569, -0.0202, 0.0203, 0.035, -0.0541]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.0736  real_mean=0.0088
+
+Saved to ../results/lora_calib_identity_19_protected_doc.json
+
+DOCUMENTED REDO DONE

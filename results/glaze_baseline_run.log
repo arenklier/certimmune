@@ -1,0 +1,44 @@
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  50%|█████     | 3/6 [00:01<00:01,  2.66it/s]Loading pipeline components...:  83%|████████▎ | 5/6 [00:01<00:00,  2.85it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.30it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.60it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+=== Glaze-style baseline: static CLIP feature-space cloak (epsilon=0.0314) ===
+    step   0: CLIP cosine-sim(perturbed, clean) = 1.0000
+    step   5: CLIP cosine-sim(perturbed, clean) = 0.2127
+    step  10: CLIP cosine-sim(perturbed, clean) = 0.0081
+    step  15: CLIP cosine-sim(perturbed, clean) = -0.1160
+    step  20: CLIP cosine-sim(perturbed, clean) = -0.1746
+    step  25: CLIP cosine-sim(perturbed, clean) = -0.2149
+    step  29: CLIP cosine-sim(perturbed, clean) = -0.2664
+
+=== Evaluating across the FULL Theta grid [100, 150, 200, 250, 300, 350, 400] (n_seeds=5) ===
+
+    t*  unprotected  glaze-style
+   100       0.7784       0.6755
+   150       0.7067       0.6143
+   200       0.6330       0.5285
+   250       0.5665       0.4800
+   300       0.5002       0.4050
+   350       0.4302       0.3573
+   400       0.3822       0.2993
+
+worst-case over Theta: unprotected=0.7784  glaze-style=0.6755
+
+Saved to /mnt/data/certimmune/src/../results

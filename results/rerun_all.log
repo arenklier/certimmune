@@ -1,0 +1,98 @@
+[pg]   photoguard n30 00
+[pg]   photoguard n30 01
+[pg]   photoguard n30 02
+[pg]   photoguard n30 05
+[pg]   photoguard n30 06
+[pg]   photoguard n30 07
+[pg]   photoguard n30 08
+[pg]   photoguard n30 09
+[pg]   photoguard n30 10
+[pg]   photoguard n30 11
+[pg] PG_COMPLETE_DONE
+[bc] ########## budget sweep (seed 0) ##########
+[bc]   id 00 steps 20
+[bc]   id 00 steps 40
+[bc]   id 00 steps 60
+[bc]   id 00 steps 80
+[bc]   id 00 steps 100
+[bc]   id 00 steps 160
+[bc]   id 17 steps 20
+[bc]   id 17 steps 40
+[bc]   id 17 steps 60
+[bc]   id 17 steps 80
+[bc]   id 17 steps 100
+[bc]   id 17 steps 160
+[bc]   id 11 steps 20
+[bc]   id 11 steps 40
+[bc]   id 11 steps 60
+[bc]   id 11 steps 80
+[bc]   id 11 steps 100
+[bc]   id 11 steps 160
+[bc] ########## seed sweep at 80 steps ##########
+[bc]   id 00 seed 1
+[bc]   id 00 seed 2
+[bc]   id 00 seed 3
+[bc]   id 00 seed 4
+[bc]   id 17 seed 1
+[bc]   id 17 seed 2
+[bc]   id 17 seed 3
+[bc]   id 17 seed 4
+[bc]   id 11 seed 1
+[bc]   id 11 seed 2
+[bc]   id 11 seed 3
+[bc]   id 11 seed 4
+[bc] BUDGET_CURVE_DONE
+[ch]   certified identity_22
+[ch]   certified identity_23
+[ch]   certified identity_24
+[ch]   certified identity_25
+[ch]   certified identity_26
+[ch]   certified identity_27
+[ch]   certified identity_28
+[ch]   certified identity_29
+[ch]   certified identity_30
+[ch]   certified identity_31
+[ch]   certified identity_32
+[ch]   certified identity_33
+[ch]   certified identity_34
+[ch]   certified identity_35
+[ch]   certified identity_36
+[ch]   certified identity_37
+[ch]   certified identity_38
+[ch]   certified identity_39
+[ch]   certified identity_40
+[ch] FAILED 41
+[ch]   certified identity_41
+[ch] FAILED 42
+[ch]   certified identity_42
+[ch] FAILED 43
+[ch]   certified identity_43
+[ch]   certified identity_44
+[ch] FAILED 45
+[ch]   certified identity_45
+[ch]   certified identity_46
+[ch] FAILED 47
+[ch]   certified identity_47
+[ch]   certified identity_48
+[ch]   certified identity_49
+[ch]   certified identity_50
+[ch] FAILED 51
+[ch]   certified identity_51
+[ch] FAILED 52
+[ch]   certified identity_52
+[ch] FAILED 53
+[ch]   certified identity_53
+[ch] FAILED 54
+[ch]   certified identity_54
+[ch] FAILED 55
+[ch]   certified identity_55
+[ch] FAILED 56
+[ch]   certified identity_56
+[ch] FAILED 57
+[ch]   certified identity_57
+[ch] FAILED 58
+[ch]   certified identity_58
+[ch] FAILED 59
+[ch]   certified identity_59
+[ch] COHORT60_DONE
+RERUN_ALL_DONE

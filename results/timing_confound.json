@@ -1,0 +1,11 @@
+{
+  "photoguard_steps": 50,
+  "photoguard_total_s": 2.7535629272460938,
+  "photoguard_per_step_s": 0.055071258544921876,
+  "ours_steps": 15,
+  "ours_total_s": 49.61428928375244,
+  "ours_per_step_s": 3.3076192855834963,
+  "per_step_cost_ratio_ours_over_pg": 60.06071720488204,
+  "photoguard_1000step_total_s_extrapolated": 55.071258544921875,
+  "compute_matched_steps_for_ours": 16.649817826662833
+}

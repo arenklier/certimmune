@@ -1,0 +1,111 @@
+{
+  "tau": 0.5,
+  "sigma_grid": [
+    0.05,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "n_seeds": 20,
+  "purifier": "IMPRESS (VAE-consistency, sigma=pur_noise)",
+  "unprotected": {
+    "results": {
+      "0.05": {
+        "k": 20,
+        "n": 20,
+        "phat": 1.0
+      },
+      "0.1": {
+        "k": 20,
+        "n": 20,
+        "phat": 1.0
+      },
+      "0.15": {
+        "k": 20,
+        "n": 20,
+        "phat": 1.0
+      },
+      "0.2": {
+        "k": 20,
+        "n": 20,
+        "phat": 1.0
+      }
+    },
+    "marginal": {
+      "cp_upper": {
+        "0.05": 1.0,
+        "0.1": 1.0,
+        "0.15": 1.0,
+        "0.2": 1.0
+      },
+      "L_sigma_hat": 0.0,
+      "grid_residual": 0.0,
+      "max_cp_upper": 1.0,
+      "alpha_final": 1.0,
+      "alpha_mc_used": 0.05
+    },
+    "simultaneous": {
+      "cp_upper": {
+        "0.05": 1.0,
+        "0.1": 1.0,
+        "0.15": 1.0,
+        "0.2": 1.0
+      },
+      "L_sigma_hat": 0.0,
+      "grid_residual": 0.0,
+      "max_cp_upper": 1.0,
+      "alpha_final": 1.0,
+      "alpha_mc_used": 0.0125
+    }
+  },
+  "immunized": {
+    "results": {
+      "0.05": {
+        "k": 20,
+        "n": 20,
+        "phat": 1.0
+      },
+      "0.1": {
+        "k": 20,
+        "n": 20,
+        "phat": 1.0
+      },
+      "0.15": {
+        "k": 20,
+        "n": 20,
+        "phat": 1.0
+      },
+      "0.2": {
+        "k": 20,
+        "n": 20,
+        "phat": 1.0
+      }
+    },
+    "marginal": {
+      "cp_upper": {
+        "0.05": 1.0,
+        "0.1": 1.0,
+        "0.15": 1.0,
+        "0.2": 1.0
+      },
+      "L_sigma_hat": 0.0,
+      "grid_residual": 0.0,
+      "max_cp_upper": 1.0,
+      "alpha_final": 1.0,
+      "alpha_mc_used": 0.05
+    },
+    "simultaneous": {
+      "cp_upper": {
+        "0.05": 1.0,
+        "0.1": 1.0,
+        "0.15": 1.0,
+        "0.2": 1.0
+      },
+      "L_sigma_hat": 0.0,
+      "grid_residual": 0.0,
+      "max_cp_upper": 1.0,
+      "alpha_final": 1.0,
+      "alpha_mc_used": 0.0125
+    }
+  }
+}

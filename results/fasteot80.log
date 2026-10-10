@@ -1,0 +1,77 @@
+########## 1a. fast-EOT 80-step deltas ##########
+  delta 00
+  delta 01
+  delta 02
+  delta 04
+  delta 05
+  delta 06
+  delta 07
+  delta 08
+  delta 09
+  delta 10
+  delta 11
+  delta 12
+  delta 13
+  delta 14
+  delta 15
+  delta 16
+  delta 17
+  delta 18
+  delta 19
+  delta 20
+########## 1b. certify DiffPure (n=30) ##########
+  diffpure 00
+  diffpure 01
+  diffpure 02
+  diffpure 04
+  diffpure 05
+  diffpure 06
+  diffpure 07
+  diffpure 08
+  diffpure 09
+  diffpure 10
+  diffpure 11
+  diffpure 12
+  diffpure 13
+  diffpure 14
+  diffpure 15
+  diffpure 16
+  diffpure 17
+  diffpure 18
+  diffpure 19
+  diffpure 20
+########## 1c. PhotoGuard identity-matched, the ten not yet run ##########
+  photoguard 04
+  photoguard 12
+  photoguard 13
+  photoguard 14
+  photoguard 15
+  photoguard 16
+  photoguard 17
+  photoguard 18
+  photoguard 19
+  photoguard 20
+########## 1d. certify the DiT (n=30) ##########
+########## 1e. n=100 on identity_00 (DiffPure) ##########
+########## 1f. certify GrIDPure ##########
+  gridpure 00
+  gridpure 01
+  gridpure 02
+  gridpure 04
+  gridpure 05
+  gridpure 06
+  gridpure 07
+  gridpure 08
+  gridpure 09
+  gridpure 10
+  gridpure 11
+  gridpure 12
+  gridpure 13
+  gridpure 14
+  gridpure 15
+  gridpure 16
+  gridpure 17
+  gridpure 18
+  gridpure 19
+  gridpure 20
+FASTEOT80_DONE

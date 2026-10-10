@@ -1,0 +1,114 @@
+{
+  "rows": [
+    {
+      "name": "clean",
+      "arcface_sim": 1.0,
+      "facenet_sim": 1.0
+    },
+    {
+      "name": "ours-EOT",
+      "arcface_sim": 0.9107306003570557,
+      "facenet_sim": 0.9509825706481934
+    },
+    {
+      "name": "ours-EOT-full",
+      "arcface_sim": 0.9170176386833191,
+      "facenet_sim": 0.944578230381012
+    },
+    {
+      "name": "ours-single-theta",
+      "arcface_sim": 0.9452551603317261,
+      "facenet_sim": 0.9595838785171509
+    },
+    {
+      "name": "ours-17step",
+      "arcface_sim": 0.9462622404098511,
+      "facenet_sim": 0.9666781425476074
+    },
+    {
+      "name": "ours-100step",
+      "arcface_sim": 0.8906289935112,
+      "facenet_sim": 0.9242756366729736
+    },
+    {
+      "name": "fast-EOT",
+      "arcface_sim": 0.9290973544120789,
+      "facenet_sim": 0.95756995677948
+    },
+    {
+      "name": "fast-EOT-k1",
+      "arcface_sim": 0.9205960631370544,
+      "facenet_sim": 0.977965235710144
+    },
+    {
+      "name": "PhotoGuard",
+      "arcface_sim": 0.9276173114776611,
+      "facenet_sim": 0.9944713711738586
+    },
+    {
+      "name": "Anti-DreamBooth",
+      "arcface_sim": 0.9317291975021362,
+      "facenet_sim": 0.9959187507629395
+    },
+    {
+      "name": "Glaze",
+      "arcface_sim": 0.9429933428764343,
+      "facenet_sim": 0.9980276823043823
+    },
+    {
+      "name": "AntiPure",
+      "arcface_sim": 0.9219690561294556,
+      "facenet_sim": 0.9904884099960327
+    },
+    {
+      "name": "AntiPure-ETGonly",
+      "arcface_sim": 0.933843731880188,
+      "facenet_sim": 0.9900507926940918
+    },
+    {
+      "name": "AntiPure-PFGonly",
+      "arcface_sim": 0.9108729362487793,
+      "facenet_sim": 0.9944424629211426
+    },
+    {
+      "name": "IMPRESS-purified-unprot",
+      "arcface_sim": 0.9213821887969971,
+      "facenet_sim": 0.9915284514427185
+    },
+    {
+      "name": "IMPRESS-purified-ours",
+      "arcface_sim": 0.8676308393478394,
+      "facenet_sim": 0.9309496879577637
+    },
+    {
+      "name": "eps4",
+      "arcface_sim": 0.9683601260185242,
+      "facenet_sim": 0.9856816530227661
+    },
+    {
+      "name": "eps16",
+      "arcface_sim": 0.8926648497581482,
+      "facenet_sim": 0.9102352857589722
+    }
+  ],
+  "paper_reported": "perturbed_only",
+  "perturbed_only": {
+    "n": 17,
+    "pearson_r": 0.6413433766341229,
+    "pearson_p": 0.0055240304552762924,
+    "spearman_rho": 0.5245098039215687,
+    "spearman_p": 0.030654016087948873
+  },
+  "all_rows_incl_clean_anchor": {
+    "n": 18,
+    "pearson_r": 0.6483645174883557,
+    "pearson_p": 0.003610433055432028,
+    "spearman_rho": 0.5995872033023736,
+    "spearman_p": 0.008536698768223005
+  },
+  "n": 17,
+  "pearson_r": 0.6413433766341229,
+  "pearson_p": 0.0055240304552762924,
+  "spearman_rho": 0.5245098039215687,
+  "spearman_p": 0.030654016087948873
+}

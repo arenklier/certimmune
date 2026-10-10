@@ -1,0 +1,550 @@
+############ identity_2 ############
+--- generating EOT protection for identity_2 ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  33%|███▎      | 2/6 [00:02<00:04,  1.20s/it]Loading pipeline components...:  50%|█████     | 3/6 [00:03<00:03,  1.19s/it]Loading pipeline components...:  67%|██████▋   | 4/6 [00:04<00:02,  1.04s/it]Loading pipeline components...: 100%|██████████| 6/6 [00:04<00:00,  1.37it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/facenet_pytorch/models/inception_resnet_v1.py:329: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(cached_file)
+Protecting 4 images from ../data/metacloak_identities/identity_2 -> ../data/metacloak_identities/identity_2_protected
+
+=== img_0.png ===
+    step   0: mean_sim=0.8513  var=0.00663 (monitor-only)  thetas=[350, 105, 260]
+    step   5: mean_sim=0.3730  var=0.00289 (monitor-only)  thetas=[360, 264, 373]
+    step  10: mean_sim=0.1806  var=0.00151 (monitor-only)  thetas=[147, 168, 152]
+    step  15: mean_sim=-0.0405  var=0.02794 (monitor-only)  thetas=[396, 177, 150]
+    step  20: mean_sim=0.0425  var=0.03526 (monitor-only)  thetas=[384, 174, 400]
+    step  24: mean_sim=0.0078  var=0.00120 (monitor-only)  thetas=[360, 359, 262]
+
+=== img_1.png ===
+    step   0: mean_sim=0.8151  var=0.01095 (monitor-only)  thetas=[350, 105, 260]
+    step   5: mean_sim=0.5150  var=0.00418 (monitor-only)  thetas=[360, 264, 373]
+    step  10: mean_sim=0.3004  var=0.00488 (monitor-only)  thetas=[147, 168, 152]
+    step  15: mean_sim=0.0108  var=0.00348 (monitor-only)  thetas=[396, 177, 150]
+    step  20: mean_sim=-0.0743  var=0.02171 (monitor-only)  thetas=[384, 174, 400]
+    step  24: mean_sim=-0.0844  var=0.00670 (monitor-only)  thetas=[360, 359, 262]
+
+=== img_2.png ===
+    step   0: mean_sim=0.8580  var=0.00472 (monitor-only)  thetas=[350, 105, 260]
+    step   5: mean_sim=0.5878  var=0.01023 (monitor-only)  thetas=[360, 264, 373]
+    step  10: mean_sim=0.3186  var=0.00990 (monitor-only)  thetas=[147, 168, 152]
+    step  15: mean_sim=0.0473  var=0.00077 (monitor-only)  thetas=[396, 177, 150]
+    step  20: mean_sim=0.0207  var=0.00720 (monitor-only)  thetas=[384, 174, 400]
+    step  24: mean_sim=-0.1875  var=0.00294 (monitor-only)  thetas=[360, 359, 262]
+
+=== img_3.png ===
+    step   0: mean_sim=0.8160  var=0.01340 (monitor-only)  thetas=[350, 105, 260]
+    step   5: mean_sim=0.5294  var=0.00106 (monitor-only)  thetas=[360, 264, 373]
+    step  10: mean_sim=0.4002  var=0.00003 (monitor-only)  thetas=[147, 168, 152]
+    step  15: mean_sim=0.0293  var=0.00015 (monitor-only)  thetas=[396, 177, 150]
+    step  20: mean_sim=0.0040  var=0.03142 (monitor-only)  thetas=[384, 174, 400]
+    step  24: mean_sim=-0.2200  var=0.00060 (monitor-only)  thetas=[360, 359, 262]
+
+Done. Protected set saved to ../data/metacloak_identities/identity_2_protected
+--- identity_2 UNPROTECTED ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:05<00:29,  5.89s/it]Loading pipeline components...:  50%|█████     | 3/6 [00:07<00:06,  2.03s/it]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...: 100%|██████████| 6/6 [00:08<00:00,  1.03s/it]Loading pipeline components...: 100%|██████████| 6/6 [00:08<00:00,  1.41s/it]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_2
+Reference embedding: 4 images from ../data/metacloak_identities/identity_2  [SAME AS TRAINING SET]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.6446
+    step    0: loss=0.2057 (inst=0.0418)
+    step  100: loss=0.1672 (inst=0.0565)
+    step  200: loss=0.0403 (inst=0.0035)
+    step  299: loss=0.0158 (inst=0.0024)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0451
+  individual: [0.0944, -0.0174, 0.1046, 0.0607, -0.0063, -0.0129, 0.0333, 0.0481, 0.0149, 0.165, 0.0136, 0.0417, 0.039, 0.0, -0.0524, -0.0147, 0.0516, 0.0, 0.196, 0.1425]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.6446  real_mean=0.0451
+
+Saved to ../results/lora_calib_identity_2_unprotected_fixedref.json
+--- identity_2 PROTECTED (fixed clean reference) ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:04<00:08,  2.03s/it]Loading pipeline components...:  50%|█████     | 3/6 [00:05<00:04,  1.62s/it]Loading pipeline components...:  67%|██████▋   | 4/6 [00:05<00:02,  1.30s/it]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...: 100%|██████████| 6/6 [00:05<00:00,  1.01it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_2_protected
+Reference embedding: 4 images from ../data/metacloak_identities/identity_2  [FIXED CLEAN REFERENCE]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.1373
+    step    0: loss=0.2064 (inst=0.0426)
+    step  100: loss=0.1803 (inst=0.0697)
+    step  200: loss=0.0401 (inst=0.0033)
+    step  299: loss=0.0157 (inst=0.0022)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0433
+  individual: [0.1012, 0.0267, 0.1012, -0.0667, -0.0288, 0.0354, 0.0, 0.0813, 0.0052, 0.1353, -0.0053, 0.1296, 0.0359, 0.0, 0.0418, 0.034, 0.0267, 0.081, 0.0553, 0.0771]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.1373  real_mean=0.0433
+
+Saved to ../results/lora_calib_identity_2_protected_fixedref.json
+
+############ identity_8 ############
+--- generating EOT protection for identity_8 ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  50%|█████     | 3/6 [00:01<00:01,  2.84it/s]Loading pipeline components...:  67%|██████▋   | 4/6 [00:09<00:05,  2.92s/it]Loading pipeline components...:  83%|████████▎ | 5/6 [00:11<00:02,  2.56s/it]Loading pipeline components...: 100%|██████████| 6/6 [00:11<00:00,  1.86s/it]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/facenet_pytorch/models/inception_resnet_v1.py:329: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(cached_file)
+Protecting 4 images from ../data/metacloak_identities/identity_8 -> ../data/metacloak_identities/identity_8_protected
+
+=== img_0.png ===
+    step   0: mean_sim=0.8210  var=0.00050 (monitor-only)  thetas=[350, 105, 260]
+    step   5: mean_sim=0.2768  var=0.00453 (monitor-only)  thetas=[360, 264, 373]
+    step  10: mean_sim=0.1249  var=0.00470 (monitor-only)  thetas=[147, 168, 152]
+    step  15: mean_sim=-0.0974  var=0.00377 (monitor-only)  thetas=[396, 177, 150]
+    step  20: mean_sim=-0.2304  var=0.00686 (monitor-only)  thetas=[384, 174, 400]
+    step  24: mean_sim=-0.1585  var=0.00294 (monitor-only)  thetas=[360, 359, 262]
+
+=== img_1.png ===
+    step   0: mean_sim=0.7903  var=0.00529 (monitor-only)  thetas=[350, 105, 260]
+    step   5: mean_sim=0.2514  var=0.00728 (monitor-only)  thetas=[360, 264, 373]
+    step  10: mean_sim=-0.0511  var=0.00190 (monitor-only)  thetas=[147, 168, 152]
+    step  15: mean_sim=-0.1628  var=0.03091 (monitor-only)  thetas=[396, 177, 150]
+    step  20: mean_sim=-0.2721  var=0.00842 (monitor-only)  thetas=[384, 174, 400]
+    step  24: mean_sim=-0.2499  var=0.02029 (monitor-only)  thetas=[360, 359, 262]
+
+=== img_2.png ===
+    step   0: mean_sim=0.8210  var=0.00334 (monitor-only)  thetas=[350, 105, 260]
+    step   5: mean_sim=0.5637  var=0.00006 (monitor-only)  thetas=[360, 264, 373]
+    step  10: mean_sim=0.2946  var=0.00453 (monitor-only)  thetas=[147, 168, 152]
+    step  15: mean_sim=0.1102  var=0.00301 (monitor-only)  thetas=[396, 177, 150]
+    step  20: mean_sim=-0.0781  var=0.01704 (monitor-only)  thetas=[384, 174, 400]
+    step  24: mean_sim=-0.0071  var=0.00556 (monitor-only)  thetas=[360, 359, 262]
+
+=== img_3.png ===
+    step   0: mean_sim=0.8534  var=0.00401 (monitor-only)  thetas=[350, 105, 260]
+    step   5: mean_sim=0.4233  var=0.00044 (monitor-only)  thetas=[360, 264, 373]
+    step  10: mean_sim=0.1310  var=0.00586 (monitor-only)  thetas=[147, 168, 152]
+    step  15: mean_sim=0.0752  var=0.01715 (monitor-only)  thetas=[396, 177, 150]
+    step  20: mean_sim=-0.1869  var=0.00370 (monitor-only)  thetas=[384, 174, 400]
+    step  24: mean_sim=-0.0919  var=0.02148 (monitor-only)  thetas=[360, 359, 262]
+
+Done. Protected set saved to ../data/metacloak_identities/identity_8_protected
+--- identity_8 UNPROTECTED ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:02<00:04,  1.05s/it]Loading pipeline components...:  50%|█████     | 3/6 [00:03<00:03,  1.18s/it]Loading pipeline components...:  67%|██████▋   | 4/6 [00:11<00:07,  3.55s/it]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...: 100%|██████████| 6/6 [00:11<00:00,  1.85s/it]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_8
+Reference embedding: 4 images from ../data/metacloak_identities/identity_8  [SAME AS TRAINING SET]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.7515
+    step    0: loss=0.1910 (inst=0.0271)
+    step  100: loss=0.1885 (inst=0.0776)
+    step  200: loss=0.0404 (inst=0.0035)
+    step  299: loss=0.0154 (inst=0.0020)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0736
+  individual: [0.1086, 0.002, 0.1731, 0.045, 0.0784, 0.0611, -0.0145, -0.0576, 0.054, 0.1291, 0.0745, 0.0144, 0.2122, 0.0, 0.1083, 0.0945, 0.0371, 0.1552, 0.1021, 0.0934]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.7515  real_mean=0.0736
+
+Saved to ../results/lora_calib_identity_8_unprotected_fixedref.json
+--- identity_8 PROTECTED (fixed clean reference) ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:09<00:46,  9.28s/it]Loading pipeline components...:  33%|███▎      | 2/6 [00:10<00:18,  4.53s/it]Loading pipeline components...:  83%|████████▎ | 5/6 [00:11<00:01,  1.48s/it]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...: 100%|██████████| 6/6 [00:11<00:00,  1.90s/it]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_8_protected
+Reference embedding: 4 images from ../data/metacloak_identities/identity_8  [FIXED CLEAN REFERENCE]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.0085
+    step    0: loss=0.1994 (inst=0.0355)
+    step  100: loss=0.1894 (inst=0.0786)
+    step  200: loss=0.0407 (inst=0.0039)
+    step  299: loss=0.0157 (inst=0.0023)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0418
+  individual: [-0.0735, 0.0375, 0.1018, 0.0076, -0.0185, 0.1081, -0.0123, 0.0803, 0.0744, 0.0063, 0.0907, 0.0734, 0.0784, 0.0, 0.0384, 0.0537, 0.0418, 0.0593, 0.0052, 0.0837]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.0085  real_mean=0.0418
+
+Saved to ../results/lora_calib_identity_8_protected_fixedref.json
+
+############ identity_9 ############
+--- generating EOT protection for identity_9 ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:01<00:03,  1.01it/s]Loading pipeline components...:  50%|█████     | 3/6 [00:03<00:03,  1.22s/it]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  83%|████████▎ | 5/6 [00:11<00:02,  2.85s/it]Loading pipeline components...: 100%|██████████| 6/6 [00:11<00:00,  1.99s/it]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/facenet_pytorch/models/inception_resnet_v1.py:329: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(cached_file)
+Protecting 4 images from ../data/metacloak_identities/identity_9 -> ../data/metacloak_identities/identity_9_protected
+
+=== img_0.png ===
+    step   0: mean_sim=0.8598  var=0.00539 (monitor-only)  thetas=[350, 105, 260]
+    step   5: mean_sim=0.3891  var=0.01130 (monitor-only)  thetas=[360, 264, 373]
+    step  10: mean_sim=0.0773  var=0.02253 (monitor-only)  thetas=[147, 168, 152]
+    step  15: mean_sim=-0.1192  var=0.01723 (monitor-only)  thetas=[396, 177, 150]
+    step  20: mean_sim=-0.1011  var=0.03321 (monitor-only)  thetas=[384, 174, 400]
+    step  24: mean_sim=-0.2389  var=0.00581 (monitor-only)  thetas=[360, 359, 262]
+
+=== img_1.png ===
+    step   0: mean_sim=0.8051  var=0.00618 (monitor-only)  thetas=[350, 105, 260]
+    step   5: mean_sim=0.1678  var=0.00855 (monitor-only)  thetas=[360, 264, 373]
+    step  10: mean_sim=-0.1286  var=0.00317 (monitor-only)  thetas=[147, 168, 152]
+    step  15: mean_sim=-0.2651  var=0.02343 (monitor-only)  thetas=[396, 177, 150]
+    step  20: mean_sim=-0.2155  var=0.01678 (monitor-only)  thetas=[384, 174, 400]
+    step  24: mean_sim=-0.2091  var=0.00548 (monitor-only)  thetas=[360, 359, 262]
+
+=== img_2.png ===
+    step   0: mean_sim=0.8333  var=0.00555 (monitor-only)  thetas=[350, 105, 260]
+    step   5: mean_sim=0.4152  var=0.00014 (monitor-only)  thetas=[360, 264, 373]
+    step  10: mean_sim=0.1615  var=0.02021 (monitor-only)  thetas=[147, 168, 152]
+    step  15: mean_sim=-0.1812  var=0.00929 (monitor-only)  thetas=[396, 177, 150]
+    step  20: mean_sim=-0.2060  var=0.00188 (monitor-only)  thetas=[384, 174, 400]
+    step  24: mean_sim=-0.2895  var=0.00179 (monitor-only)  thetas=[360, 359, 262]
+
+=== img_3.png ===
+    step   0: mean_sim=0.8256  var=0.01416 (monitor-only)  thetas=[350, 105, 260]
+    step   5: mean_sim=0.5294  var=0.00026 (monitor-only)  thetas=[360, 264, 373]
+    step  10: mean_sim=0.2615  var=0.00548 (monitor-only)  thetas=[147, 168, 152]
+    step  15: mean_sim=-0.0526  var=0.00799 (monitor-only)  thetas=[396, 177, 150]
+    step  20: mean_sim=0.1025  var=0.02342 (monitor-only)  thetas=[384, 174, 400]
+    step  24: mean_sim=-0.0887  var=0.02864 (monitor-only)  thetas=[360, 359, 262]
+
+Done. Protected set saved to ../data/metacloak_identities/identity_9_protected
+--- identity_9 UNPROTECTED ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  33%|███▎      | 2/6 [00:00<00:01,  2.94it/s]Loading pipeline components...:  50%|█████     | 3/6 [00:07<00:09,  3.02s/it]Loading pipeline components...:  83%|████████▎ | 5/6 [00:09<00:01,  1.80s/it]Loading pipeline components...: 100%|██████████| 6/6 [00:09<00:00,  1.50s/it]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_9
+Reference embedding: 4 images from ../data/metacloak_identities/identity_9  [SAME AS TRAINING SET]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.7536
+    step    0: loss=0.1967 (inst=0.0328)
+    step  100: loss=0.1856 (inst=0.0750)
+    step  200: loss=0.0404 (inst=0.0036)
+    step  299: loss=0.0159 (inst=0.0025)
+  REAL attack success (mean ArcFace sim of 20 generations): 0.0936
+  individual: [0.1549, 0.2662, 0.0057, 0.2792, -0.0165, 0.1842, 0.0003, 0.1482, 0.009, 0.1942, 0.108, 0.2925, -0.0176, 0.0, -0.0542, 0.0019, 0.0091, 0.07, 0.2187, 0.019]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.7536  real_mean=0.0936
+
+Saved to ../results/lora_calib_identity_9_unprotected_fixedref.json
+--- identity_9 PROTECTED (fixed clean reference) ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:03,  1.31it/s]Loading pipeline components...:  67%|██████▋   | 4/6 [00:01<00:00,  2.15it/s]Loading pipeline components...:  83%|████████▎ | 5/6 [00:04<00:01,  1.14s/it]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...: 100%|██████████| 6/6 [00:04<00:00,  1.23it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+Loaded identity set: 4 images from ../data/metacloak_identities/identity_9_protected
+Reference embedding: 4 images from ../data/metacloak_identities/identity_9  [FIXED CLEAN REFERENCE]
+Generating 8 class images from the base model for prior preservation...
+
+=== condition: diffpure_t200 ===
+  proxy (purified SET ArcFace sim to clean): 0.1318
+    step    0: loss=0.2037 (inst=0.0398)
+    step  100: loss=0.1996 (inst=0.0889)
+    step  200: loss=0.0407 (inst=0.0039)
+    step  299: loss=0.0160 (inst=0.0026)
+  REAL attack success (mean ArcFace sim of 20 generations): -0.0099
+  individual: [0.0111, -0.0441, -0.0911, -0.0678, 0.0, -0.0893, -0.0121, 0.0901, -0.0113, 0.1425, -0.0554, -0.0337, -0.0645, 0.0, -0.0047, -0.0515, 0.0023, 0.048, -0.0289, 0.0621]
+
+=== Summary: proxy vs real ===
+  diffpure_t200        proxy=0.1318  real_mean=-0.0099
+
+Saved to ../results/lora_calib_identity_9_protected_fixedref.json
+
+############ identity_15 ############
+--- generating EOT protection for identity_15 ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:04,  1.11it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:02<00:06,  1.51s/it]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  2.25it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.79it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/facenet_pytorch/models/inception_resnet_v1.py:329: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(cached_file)
+Protecting 4 images from ../data/metacloak_identities/identity_15 -> ../data/metacloak_identities/identity_15_protected
+
+=== img_0.png ===
+Traceback (most recent call last):
+  File "/mnt/data/certimmune/src/protect_identity_set.py", line 68, in <module>
+    main()
+  File "/mnt/data/certimmune/src/protect_identity_set.py", line 56, in main
+    delta, _ = optimize_delta_eot(pipe, facenet, clean_pixel, args.theta_min, args.theta_max,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/src/delta_optimize.py", line 150, in optimize_delta_eot
+    purified = differentiable_diffpure(pipe, x_adv, t_star, fixed_timesteps, text_emb, noise)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/src/delta_optimize.py", line 83, in differentiable_diffpure
+    out = pipe.vae.decode(lat).sample
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/utils/accelerate_utils.py", line 46, in wrapper
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/models/autoencoders/autoencoder_kl.py", line 326, in decode
+    decoded = self._decode(z).sample
+              ^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/models/autoencoders/autoencoder_kl.py", line 297, in _decode
+    dec = self.decoder(z)
+          ^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/models/autoencoders/vae.py", line 337, in forward
+    sample = up_block(sample, latent_embeds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/models/unets/unet_2d_blocks.py", line 2746, in forward
+    hidden_states = resnet(hidden_states, temb=temb)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/models/resnet.py", line 366, in forward
+    hidden_states = self.conv2(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 458, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 454, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 44.39 GiB of which 32.44 MiB is free. Process 3046832 has 432.89 MiB memory in use. Process 1912821 has 6.32 GiB memory in use. Process 1917730 has 15.99 GiB memory in use. Process 1918936 has 544.00 MiB memory in use. Including non-PyTorch memory, this process has 21.05 GiB memory in use. Of the allocated memory 20.42 GiB is allocated by PyTorch, and 122.35 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+PROTECT FAILED 15
+############ identity_19 ############
+--- generating EOT protection for identity_19 ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:02<00:04,  1.22s/it]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  83%|████████▎ | 5/6 [00:03<00:00,  1.82it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.91it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.67it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/facenet_pytorch/models/inception_resnet_v1.py:329: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(cached_file)
+Protecting 4 images from ../data/metacloak_identities/identity_19 -> ../data/metacloak_identities/identity_19_protected
+
+=== img_0.png ===
+Traceback (most recent call last):
+  File "/mnt/data/certimmune/src/protect_identity_set.py", line 68, in <module>
+    main()
+  File "/mnt/data/certimmune/src/protect_identity_set.py", line 56, in main
+    delta, _ = optimize_delta_eot(pipe, facenet, clean_pixel, args.theta_min, args.theta_max,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/src/delta_optimize.py", line 150, in optimize_delta_eot
+    purified = differentiable_diffpure(pipe, x_adv, t_star, fixed_timesteps, text_emb, noise)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/src/delta_optimize.py", line 83, in differentiable_diffpure
+    out = pipe.vae.decode(lat).sample
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/utils/accelerate_utils.py", line 46, in wrapper
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/models/autoencoders/autoencoder_kl.py", line 326, in decode
+    decoded = self._decode(z).sample
+              ^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/models/autoencoders/autoencoder_kl.py", line 297, in _decode
+    dec = self.decoder(z)
+          ^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/models/autoencoders/vae.py", line 337, in forward
+    sample = up_block(sample, latent_embeds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/models/unets/unet_2d_blocks.py", line 2746, in forward
+    hidden_states = resnet(hidden_states, temb=temb)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/models/resnet.py", line 371, in forward
+    output_tensor = (input_tensor + hidden_states) / self.output_scale_factor
+                     ~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 44.39 GiB of which 2.44 MiB is free. Process 3046832 has 432.89 MiB memory in use. Process 1912821 has 6.32 GiB memory in use. Process 1917730 has 15.99 GiB memory in use. Process 1918936 has 544.00 MiB memory in use. Including non-PyTorch memory, this process has 21.08 GiB memory in use. Of the allocated memory 20.46 GiB is allocated by PyTorch, and 118.19 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+PROTECT FAILED 19
+############ identity_37 ############
+--- generating EOT protection for identity_37 ---
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:02<00:11,  2.26s/it]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  83%|████████▎ | 5/6 [00:02<00:00,  2.04it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  2.09it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.75it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/facenet_pytorch/models/inception_resnet_v1.py:329: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(cached_file)
+Protecting 4 images from ../data/metacloak_identities/identity_37 -> ../data/metacloak_identities/identity_37_protected
+
+=== img_0.png ===
+Traceback (most recent call last):
+  File "/mnt/data/certimmune/src/protect_identity_set.py", line 68, in <module>
+    main()
+  File "/mnt/data/certimmune/src/protect_identity_set.py", line 56, in main
+    delta, _ = optimize_delta_eot(pipe, facenet, clean_pixel, args.theta_min, args.theta_max,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/src/delta_optimize.py", line 150, in optimize_delta_eot
+    purified = differentiable_diffpure(pipe, x_adv, t_star, fixed_timesteps, text_emb, noise)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/src/delta_optimize.py", line 83, in differentiable_diffpure
+    out = pipe.vae.decode(lat).sample
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/utils/accelerate_utils.py", line 46, in wrapper
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/models/autoencoders/autoencoder_kl.py", line 326, in decode
+    decoded = self._decode(z).sample
+              ^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/models/autoencoders/autoencoder_kl.py", line 297, in _decode
+    dec = self.decoder(z)
+          ^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/models/autoencoders/vae.py", line 337, in forward
+    sample = up_block(sample, latent_embeds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/models/unets/unet_2d_blocks.py", line 2746, in forward
+    hidden_states = resnet(hidden_states, temb=temb)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/certimmune/venv/lib/python3.12/site-packages/diffusers/models/resnet.py", line 371, in forward
+    output_tensor = (input_tensor + hidden_states) / self.output_scale_factor
+                     ~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 44.39 GiB of which 2.44 MiB is free. Process 3046832 has 432.89 MiB memory in use. Process 1912821 has 6.32 GiB memory in use. Process 1917730 has 15.99 GiB memory in use. Process 1918936 has 544.00 MiB memory in use. Including non-PyTorch memory, this process has 21.08 GiB memory in use. Of the allocated memory 20.46 GiB is allocated by PyTorch, and 118.19 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+PROTECT FAILED 37
+SCALEUP DONE

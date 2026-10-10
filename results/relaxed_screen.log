@@ -1,0 +1,65 @@
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+identity_0     1/4
+identity_1     0/4
+identity_10    0/4
+identity_11    1/4
+identity_12    1/4
+identity_13    2/4
+identity_14    2/4
+identity_15    3/4
+identity_16    1/4
+identity_17    4/4
+identity_17_protected 4/4
+identity_18    2/4
+identity_19    3/4
+identity_2     3/4
+identity_20    0/4
+identity_21    2/4
+identity_22    1/4
+identity_23    2/4
+identity_24    1/4
+identity_27    0/4
+identity_28    2/4
+identity_29    0/4
+identity_3     4/4
+identity_30    1/4
+identity_31    2/4
+identity_32    1/4
+identity_33    1/4
+identity_35    1/4
+identity_36    1/4
+identity_37    3/4
+identity_38    4/4
+identity_38_protected 4/4
+identity_3_protected 4/4
+identity_4     2/4
+identity_6     0/4
+identity_7     1/4
+identity_8     3/4
+identity_9     3/4
+
+identities total: 38
+  exactly 4/4 detected: 6 identities
+  exactly 3/4 detected: 6 identities
+  exactly 2/4 detected: 8 identities
+  exactly 1/4 detected: 12 identities
+  exactly 0/4 detected: 6 identities
+  >= 4 detected: 6 identities
+  >= 3 detected: 12 identities
+  >= 2 detected: 20 identities
+  >= 1 detected: 32 identities
+saved metacloak_relaxed_screen.json

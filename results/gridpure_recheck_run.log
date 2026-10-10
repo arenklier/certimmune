@@ -1,0 +1,65 @@
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Found 5 identities, n_seeds=30, R-grid=[1, 2, 3, 4, 5]
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:04,  1.12it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:01<00:03,  1.06it/s]/mnt/data/certimmune/venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  67%|██████▋   | 4/6 [00:03<00:02,  1.01s/it]Loading pipeline components...: 100%|██████████| 6/6 [00:03<00:00,  1.51it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+
+=== identity_00 ===
+  R=1  mean=0.7701  std=0.0265  sem=0.0048  detected=30/30
+  R=2  mean=0.6438  std=0.0460  sem=0.0084  detected=30/30
+  R=3  mean=0.5596  std=0.0402  sem=0.0073  detected=30/30
+  R=4  mean=0.4834  std=0.0412  sem=0.0075  detected=30/30
+  R=5  mean=0.4226  std=0.0463  sem=0.0084  detected=30/30
+
+=== identity_01 ===
+  R=1  mean=0.5895  std=0.2646  sem=0.0483  detected=25/30
+  R=2  mean=0.3709  std=0.2664  sem=0.0486  detected=20/30
+  R=3  mean=0.1713  std=0.2275  sem=0.0415  detected=11/30
+  R=4  mean=0.1311  std=0.1892  sem=0.0345  detected=10/30
+  R=5  mean=0.0338  std=0.1015  sem=0.0185  detected=3/30
+
+=== identity_02 ===
+  R=1  mean=0.5745  std=0.3184  sem=0.0581  detected=23/30
+  R=2  mean=0.4781  std=0.2497  sem=0.0456  detected=24/30
+  R=3  mean=0.3584  std=0.2253  sem=0.0411  detected=22/30
+  R=4  mean=0.2794  std=0.2138  sem=0.0390  detected=20/30
+  R=5  mean=0.2662  std=0.1766  sem=0.0322  detected=22/30
+
+=== identity_03 ===
+  R=1  mean=0.4953  std=0.3254  sem=0.0594  detected=21/30
+  R=2  mean=0.2367  std=0.2907  sem=0.0531  detected=12/30
+  R=3  mean=0.0672  std=0.1720  sem=0.0314  detected=4/30
+  R=4  mean=0.0449  std=0.1359  sem=0.0248  detected=3/30
+  R=5  mean=0.0856  std=0.1561  sem=0.0285  detected=7/30
+
+=== identity_04 ===
+  R=1  mean=0.7370  std=0.0426  sem=0.0078  detected=30/30
+  R=2  mean=0.5628  std=0.1589  sem=0.0290  detected=28/30
+  R=3  mean=0.4146  std=0.2122  sem=0.0387  detected=24/30
+  R=4  mean=0.3077  std=0.2224  sem=0.0406  detected=20/30
+  R=5  mean=0.2026  std=0.1935  sem=0.0353  detected=16/30
+
+=== Aggregated across identities, with z-score per adjacent pair ===
+  R=1->2: h=0.6333->0.4584  diff=0.1748  combined_sem=0.0514  z=3.40  [REAL JUMP (z>=2)]
+  R=2->3: h=0.4584->0.3142  diff=0.1442  combined_sem=0.0489  z=2.95  [REAL JUMP (z>=2)]
+  R=3->4: h=0.3142->0.2493  diff=0.0649  combined_sem=0.0434  z=1.50  [ambiguous (1<=z<2)]
+  R=4->5: h=0.2493->0.2022  diff=0.0471  combined_sem=0.0383  z=1.23  [ambiguous (1<=z<2)]
+
+Saved to results/gridpure_recheck.json

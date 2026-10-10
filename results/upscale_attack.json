@@ -1,0 +1,297 @@
+{
+ "00": {
+  "eot": {
+   "pre_attack_sim": 0.9267395734786987,
+   "post_attack_sim": 0.8493523001670837,
+   "face_detected_post": true
+  },
+  "clean_control": {
+   "post_attack_sim": 0.8763571381568909
+  }
+ },
+ "01": {
+  "eot": {
+   "pre_attack_sim": 0.8913934230804443,
+   "post_attack_sim": 0.7847607135772705,
+   "face_detected_post": true
+  },
+  "photoguard": {
+   "pre_attack_sim": null,
+   "post_attack_sim": null,
+   "face_detected_post": false
+  },
+  "clean_control": {
+   "post_attack_sim": 0.871350109577179
+  }
+ },
+ "02": {
+  "eot": {
+   "pre_attack_sim": 0.8724345564842224,
+   "post_attack_sim": 0.8247215151786804,
+   "face_detected_post": true
+  },
+  "photoguard": {
+   "pre_attack_sim": null,
+   "post_attack_sim": null,
+   "face_detected_post": false
+  },
+  "clean_control": {
+   "post_attack_sim": null
+  }
+ },
+ "04": {
+  "eot": {
+   "pre_attack_sim": 0.858222484588623,
+   "post_attack_sim": 0.8125011920928955,
+   "face_detected_post": true
+  },
+  "photoguard": {
+   "pre_attack_sim": 0.9512929320335388,
+   "post_attack_sim": 0.9076770544052124,
+   "face_detected_post": true
+  },
+  "clean_control": {
+   "post_attack_sim": 0.91030353307724
+  }
+ },
+ "05": {
+  "eot": {
+   "pre_attack_sim": null,
+   "post_attack_sim": null,
+   "face_detected_post": false
+  },
+  "photoguard": {
+   "pre_attack_sim": null,
+   "post_attack_sim": 0.909209668636322,
+   "face_detected_post": true
+  },
+  "clean_control": {
+   "post_attack_sim": null
+  }
+ },
+ "06": {
+  "eot": {
+   "pre_attack_sim": 0.9528950452804565,
+   "post_attack_sim": 0.9008973836898804,
+   "face_detected_post": true
+  },
+  "photoguard": {
+   "pre_attack_sim": 0.9648650288581848,
+   "post_attack_sim": 0.9366967082023621,
+   "face_detected_post": true
+  },
+  "clean_control": {
+   "post_attack_sim": 0.9176395535469055
+  }
+ },
+ "07": {
+  "eot": {
+   "pre_attack_sim": 0.8910106420516968,
+   "post_attack_sim": 0.8406979441642761,
+   "face_detected_post": true
+  },
+  "photoguard": {
+   "pre_attack_sim": 0.9501895308494568,
+   "post_attack_sim": null,
+   "face_detected_post": false
+  },
+  "clean_control": {
+   "post_attack_sim": null
+  }
+ },
+ "08": {
+  "eot": {
+   "pre_attack_sim": null,
+   "post_attack_sim": null,
+   "face_detected_post": false
+  },
+  "photoguard": {
+   "pre_attack_sim": null,
+   "post_attack_sim": 0.7424801588058472,
+   "face_detected_post": true
+  },
+  "clean_control": {
+   "post_attack_sim": 0.7419414520263672
+  }
+ },
+ "09": {
+  "eot": {
+   "pre_attack_sim": 0.9355961680412292,
+   "post_attack_sim": 0.91155606508255,
+   "face_detected_post": true
+  },
+  "photoguard": {
+   "pre_attack_sim": null,
+   "post_attack_sim": null,
+   "face_detected_post": false
+  },
+  "clean_control": {
+   "post_attack_sim": 0.9294382333755493
+  }
+ },
+ "10": {
+  "eot": {
+   "pre_attack_sim": 0.9241873025894165,
+   "post_attack_sim": 0.8710079193115234,
+   "face_detected_post": true
+  },
+  "photoguard": {
+   "pre_attack_sim": 0.9621533155441284,
+   "post_attack_sim": 0.913313090801239,
+   "face_detected_post": true
+  },
+  "clean_control": {
+   "post_attack_sim": 0.9164358973503113
+  }
+ },
+ "11": {
+  "eot": {
+   "pre_attack_sim": 0.929683268070221,
+   "post_attack_sim": 0.9301598072052002,
+   "face_detected_post": true
+  },
+  "photoguard": {
+   "pre_attack_sim": 0.9708319902420044,
+   "post_attack_sim": 0.9333428144454956,
+   "face_detected_post": true
+  },
+  "clean_control": {
+   "post_attack_sim": 0.9121880531311035
+  }
+ },
+ "12": {
+  "eot": {
+   "pre_attack_sim": 0.925078809261322,
+   "post_attack_sim": 0.8701812624931335,
+   "face_detected_post": true
+  },
+  "photoguard": {
+   "pre_attack_sim": 0.9560015797615051,
+   "post_attack_sim": 0.9093267321586609,
+   "face_detected_post": true
+  },
+  "clean_control": {
+   "post_attack_sim": 0.9294505715370178
+  }
+ },
+ "13": {
+  "eot": {
+   "pre_attack_sim": 0.9512745141983032,
+   "post_attack_sim": 0.8941205739974976,
+   "face_detected_post": true
+  },
+  "photoguard": {
+   "pre_attack_sim": 0.9676145911216736,
+   "post_attack_sim": 0.9319671392440796,
+   "face_detected_post": true
+  },
+  "clean_control": {
+   "post_attack_sim": 0.9366247653961182
+  }
+ },
+ "14": {
+  "eot": {
+   "pre_attack_sim": 0.9334476590156555,
+   "post_attack_sim": 0.9080215692520142,
+   "face_detected_post": true
+  },
+  "photoguard": {
+   "pre_attack_sim": 0.9564195275306702,
+   "post_attack_sim": 0.9084364771842957,
+   "face_detected_post": true
+  },
+  "clean_control": {
+   "post_attack_sim": 0.9272193908691406
+  }
+ },
+ "15": {
+  "eot": {
+   "pre_attack_sim": 0.9356492757797241,
+   "post_attack_sim": 0.8357834219932556,
+   "face_detected_post": true
+  },
+  "photoguard": {
+   "pre_attack_sim": 0.9551274180412292,
+   "post_attack_sim": 0.8902237415313721,
+   "face_detected_post": true
+  },
+  "clean_control": {
+   "post_attack_sim": 0.9041974544525146
+  }
+ },
+ "16": {
+  "eot": {
+   "pre_attack_sim": 0.9062007665634155,
+   "post_attack_sim": 0.8942598700523376,
+   "face_detected_post": true
+  },
+  "photoguard": {
+   "pre_attack_sim": 0.9519059658050537,
+   "post_attack_sim": 0.9026497006416321,
+   "face_detected_post": true
+  },
+  "clean_control": {
+   "post_attack_sim": 0.9239164590835571
+  }
+ },
+ "17": {
+  "eot": {
+   "pre_attack_sim": 0.9508569836616516,
+   "post_attack_sim": 0.9066540598869324,
+   "face_detected_post": true
+  },
+  "photoguard": {
+   "pre_attack_sim": 0.9589772820472717,
+   "post_attack_sim": 0.9244131445884705,
+   "face_detected_post": true
+  },
+  "clean_control": {
+   "post_attack_sim": 0.9315981268882751
+  }
+ },
+ "18": {
+  "eot": {
+   "pre_attack_sim": 0.9479339122772217,
+   "post_attack_sim": 0.9195801019668579,
+   "face_detected_post": true
+  },
+  "photoguard": {
+   "pre_attack_sim": 0.9604750275611877,
+   "post_attack_sim": 0.9211001992225647,
+   "face_detected_post": true
+  },
+  "clean_control": {
+   "post_attack_sim": 0.9199080467224121
+  }
+ },
+ "19": {
+  "eot": {
+   "pre_attack_sim": 0.9521621465682983,
+   "post_attack_sim": 0.9091682434082031,
+   "face_detected_post": true
+  },
+  "photoguard": {
+   "pre_attack_sim": 0.9717205166816711,
+   "post_attack_sim": 0.9186748266220093,
+   "face_detected_post": true
+  },
+  "clean_control": {
+   "post_attack_sim": 0.9375443458557129
+  }
+ },
+ "20": {
+  "eot": {
+   "pre_attack_sim": 0.8541911244392395,
+   "post_attack_sim": 0.7788196206092834,
+   "face_detected_post": true
+  },
+  "photoguard": {
+   "pre_attack_sim": null,
+   "post_attack_sim": 0.8313823938369751,
+   "face_detected_post": true
+  },
+  "clean_control": {
+   "post_attack_sim": 0.9060349464416504
+  }
+ }
+}

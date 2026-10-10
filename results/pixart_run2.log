@@ -1,0 +1,121 @@
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00, 14.84it/s]Some weights of the model checkpoint were not used when initializing PixArtTransformer2DModel: 
+ ['caption_projection.y_embedding']
+Loading pipeline components...:  80%|████████  | 4/5 [00:02<00:00,  1.36it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s][A
+Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  2.33it/s][A
+Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  2.54it/s][A
+Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  2.63it/s][A
+Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.84it/s][ALoading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.72it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:04<00:00,  1.04it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:04<00:00,  1.23it/s]
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py:147: UserWarning: Specified provider 'CUDAExecutionProvider' is not in available provider names.Available providers: 'AzureExecutionProvider, CPUExecutionProvider'
+  warnings.warn(
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/det_10g.onnx detection [1, 3, '?', '?'] 127.5 128.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}}
+find model: /mnt/data/certimmune/cache/insightface/models/buffalo_l/w600k_r50.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+set det-size: (640, 640)
+grid=[100, 150, 200, 250, 300, 350, 400]  n=20  tau=0.50
+/mnt/data/certimmune/venv/lib/python3.12/site-packages/insightface/utils/face_align.py:23: FutureWarning: `estimate` is deprecated since version 0.26 and will be removed in version 2.2. Please use `SimilarityTransform.from_estimate` class constructor instead.
+  tform.estimate(lmk, dst)
+  identity_01            unprotected  alpha_marg=0.4510  alpha_sim=0.5423   k/n: 4 2 0 0 0 0 0
+                                      sim_mean:  0.12 0.06 0.02 0.07 0.07 0.07 0.05
+  identity_01            immunized    alpha_marg=0.1391  alpha_sim=0.2189   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.09 0.09 0.04 0.05 0.04 0.03 0.01
+  -> certificate_pixart_identity_01.json  (336 s)
+  identity_02            unprotected  alpha_marg=0.5010  alpha_sim=0.5923   k/n: 2 0 4 2 0 0 0
+                                      sim_mean:  0.07 0.00 0.12 0.06 0.05 0.07 0.02
+  identity_02            immunized    alpha_marg=0.1391  alpha_sim=0.2189   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.12 0.11 0.07 0.07 0.04 0.02 0.02
+  -> certificate_pixart_identity_02.json  (334 s)
+  identity_04            unprotected  alpha_marg=1.3250  alpha_sim=1.3250   k/n: 20 20 18 13 0 0 0
+                                      sim_mean:  0.74 0.66 0.58 0.49 0.42 0.34 0.25
+  identity_04            immunized    alpha_marg=0.1391  alpha_sim=0.2189   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.19 0.14 0.12 0.08 0.07 0.05 0.06
+  -> certificate_pixart_identity_04.json  (390 s)
+  identity_05            unprotected  alpha_marg=0.9413  alpha_sim=1.0097   k/n: 11 9 1 1 0 0 0
+                                      sim_mean:  0.40 0.29 0.10 0.18 0.10 0.08 0.04
+  identity_05            immunized    alpha_marg=0.1391  alpha_sim=0.2189   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.11 0.05 0.04 0.02 0.00 0.00 0.00
+  -> certificate_pixart_identity_05.json  (339 s)
+  identity_06            unprotected  alpha_marg=1.2250  alpha_sim=1.2250   k/n: 20 19 15 6 2 0 0
+                                      sim_mean:  0.77 0.66 0.47 0.34 0.26 0.14 0.06
+  identity_06            immunized    alpha_marg=0.1391  alpha_sim=0.2189   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.40 0.25 0.18 0.11 0.07 0.06 0.04
+  -> certificate_pixart_identity_06.json  (361 s)
+  identity_07            unprotected  alpha_marg=1.2000  alpha_sim=1.2000   k/n: 20 20 19 12 4 1 0
+                                      sim_mean:  0.73 0.67 0.59 0.51 0.44 0.36 0.29
+  identity_07            immunized    alpha_marg=0.1391  alpha_sim=0.2189   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.10 0.14 0.10 0.07 0.06 0.04 0.04
+  -> certificate_pixart_identity_07.json  (380 s)
+  identity_08            unprotected  alpha_marg=0.5556  alpha_sim=0.6459   k/n: 5 1 1 0 0 0 0
+                                      sim_mean:  0.16 0.03 0.03 0.00 0.00 0.00 0.00
+  identity_08            immunized    alpha_marg=0.1391  alpha_sim=0.2189   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.00 0.00 0.00 0.01 0.02 0.02 0.02
+  -> certificate_pixart_identity_08.json  (324 s)
+  identity_09            unprotected  alpha_marg=1.3319  alpha_sim=1.3436   k/n: 18 18 16 16 2 1 0
+                                      sim_mean:  0.74 0.67 0.52 0.51 0.29 0.27 0.06
+  identity_09            immunized    alpha_marg=0.1391  alpha_sim=0.2189   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.10 0.14 0.05 0.12 0.05 0.04 0.00
+  -> certificate_pixart_identity_09.json  (341 s)
+  identity_10            unprotected  alpha_marg=1.2750  alpha_sim=1.2750   k/n: 20 20 19 15 4 0 0
+                                      sim_mean:  0.74 0.68 0.59 0.52 0.44 0.37 0.29
+  identity_10            immunized    alpha_marg=0.1391  alpha_sim=0.2189   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.39 0.29 0.22 0.20 0.16 0.16 0.10
+  -> certificate_pixart_identity_10.json  (394 s)
+  identity_11            unprotected  alpha_marg=1.2000  alpha_sim=1.2000   k/n: 20 20 20 15 7 2 0
+                                      sim_mean:  0.76 0.70 0.63 0.55 0.48 0.37 0.31
+  identity_11            immunized    alpha_marg=0.5806  alpha_sim=0.6709   k/n: 5 0 0 0 0 0 0
+                                      sim_mean:  0.46 0.35 0.29 0.23 0.19 0.16 0.12
+  -> certificate_pixart_identity_11.json  (394 s)
+  identity_12            unprotected  alpha_marg=1.2500  alpha_sim=1.2500   k/n: 20 20 20 11 1 0 0
+                                      sim_mean:  0.74 0.67 0.59 0.51 0.43 0.32 0.19
+  identity_12            immunized    alpha_marg=0.1391  alpha_sim=0.2189   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.30 0.23 0.20 0.16 0.13 0.10 0.07
+  -> certificate_pixart_identity_12.json  (396 s)
+  identity_13            unprotected  alpha_marg=1.3250  alpha_sim=1.3250   k/n: 20 20 20 18 13 0 0
+                                      sim_mean:  0.81 0.74 0.66 0.57 0.50 0.39 0.28
+  identity_13            immunized    alpha_marg=0.1391  alpha_sim=0.2189   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.34 0.24 0.21 0.17 0.17 0.15 0.11
+  -> certificate_pixart_identity_13.json  (383 s)
+  identity_14            unprotected  alpha_marg=1.2750  alpha_sim=1.2750   k/n: 20 20 17 6 2 0 0
+                                      sim_mean:  0.74 0.65 0.56 0.48 0.41 0.34 0.24
+  identity_14            immunized    alpha_marg=0.1391  alpha_sim=0.2189   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.26 0.18 0.13 0.12 0.09 0.08 0.05
+  -> certificate_pixart_identity_14.json  (397 s)
+  identity_15            unprotected  alpha_marg=1.3250  alpha_sim=1.3250   k/n: 20 19 6 0 0 0 0
+                                      sim_mean:  0.68 0.57 0.43 0.31 0.22 0.14 0.09
+  identity_15            immunized    alpha_marg=0.1391  alpha_sim=0.2189   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.30 0.23 0.16 0.14 0.11 0.08 0.04
+  -> certificate_pixart_identity_15.json  (377 s)
+  identity_16            unprotected  alpha_marg=1.3000  alpha_sim=1.3000   k/n: 20 20 20 8 1 0 0
+                                      sim_mean:  0.75 0.67 0.57 0.49 0.40 0.32 0.24
+  identity_16            immunized    alpha_marg=0.1391  alpha_sim=0.2189   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.20 0.16 0.13 0.11 0.07 0.05 0.03
+  -> certificate_pixart_identity_16.json  (382 s)
+  identity_17            unprotected  alpha_marg=1.1209  alpha_sim=1.1615   k/n: 15 6 4 0 3 1 0
+                                      sim_mean:  0.58 0.21 0.12 0.02 0.10 0.12 0.11
+  identity_17            immunized    alpha_marg=0.1391  alpha_sim=0.2189   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.26 0.21 0.17 0.16 0.10 0.08 0.02
+  -> certificate_pixart_identity_17.json  (343 s)
+  identity_18            unprotected  alpha_marg=1.3000  alpha_sim=1.3000   k/n: 20 20 20 20 8 3 0
+                                      sim_mean:  0.79 0.71 0.63 0.57 0.49 0.42 0.35
+  identity_18            immunized    alpha_marg=0.1391  alpha_sim=0.2189   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.13 0.15 0.07 0.13 0.04 0.07 0.03
+  -> certificate_pixart_identity_18.json  (364 s)
+  identity_19            unprotected  alpha_marg=1.2250  alpha_sim=1.2250   k/n: 20 20 20 20 14 5 0
+                                      sim_mean:  0.79 0.72 0.65 0.59 0.52 0.46 0.37
+  identity_19            immunized    alpha_marg=0.2411  alpha_sim=0.3277   k/n: 1 0 0 0 0 0 0
+                                      sim_mean:  0.43 0.36 0.29 0.26 0.20 0.18 0.13
+  -> certificate_pixart_identity_19.json  (396 s)
+  identity_20            unprotected  alpha_marg=1.1569  alpha_sim=1.1686   k/n: 18 17 11 4 0 0 0
+                                      sim_mean:  0.62 0.54 0.39 0.40 0.18 0.16 0.03
+  identity_20            immunized    alpha_marg=0.1391  alpha_sim=0.2189   k/n: 0 0 0 0 0 0 0
+                                      sim_mean:  0.02 0.04 0.01 0.01 0.00 0.00 0.00
+  -> certificate_pixart_identity_20.json  (345 s)
+JOB2 DONE
